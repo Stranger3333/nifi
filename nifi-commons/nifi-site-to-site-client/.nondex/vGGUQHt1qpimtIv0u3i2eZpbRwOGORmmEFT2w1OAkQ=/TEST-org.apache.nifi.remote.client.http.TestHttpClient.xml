@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.apache.nifi.remote.client.http.TestHttpClient" time="8.936" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="nondexStart" value="0"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/siruiw4/nifi/nifi-commons/nifi-site-to-site-client/target/test-classes:/home/siruiw4/nifi/nifi-commons/nifi-site-to-site-client/target/classes:/home/siruiw4/.m2/repository/org/apache/nifi/nifi-api/1.18.0-SNAPSHOT/nifi-api-1.18.0-SNAPSHOT.jar:/home/siruiw4/.m2/repository/org/apache/nifi/nifi-framework-api/1.18.0-SNAPSHOT/nifi-framework-api-1.18.0-SNAPSHOT.jar:/home/siruiw4/.m2/repository/org/apache/nifi/nifi-utils/1.18.0-SNAPSHOT/nifi-utils-1.18.0-SNAPSHOT.jar:/home/siruiw4/.m2/repository/org/apache/nifi/nifi-security-utils/1.18.0-SNAPSHOT/nifi-security-utils-1.18.0-SNAPSHOT.jar:/home/siruiw4/.m2/repository/org/apache/nifi/nifi-deprecation-log/1.18.0-SNAPSHOT/nifi-deprecation-log-1.18.0-SNAPSHOT.jar:/home/siruiw4/.m2/repository/org/apache/nifi/nifi-security-utils-api/1.18.0-SNAPSHOT/nifi-security-utils-api-1.18.0-SNAPSHOT.jar:/home/siruiw4/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/home/siruiw4/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.70/bcprov-jdk15on-1.70.jar:/home/siruiw4/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.70/bcpkix-jdk15on-1.70.jar:/home/siruiw4/.m2/repository/org/bouncycastle/bcutil-jdk15on/1.70/bcutil-jdk15on-1.70.jar:/home/siruiw4/.m2/repository/org/apache/nifi/nifi-properties/1.18.0-SNAPSHOT/nifi-properties-1.18.0-SNAPSHOT.jar:/home/siruiw4/.m2/repository/org/apache/nifi/nifi-property-utils/1.18.0-SNAPSHOT/nifi-property-utils-1.18.0-SNAPSHOT.jar:/home/siruiw4/.m2/repository/at/favre/lib/bcrypt/0.9.0/bcrypt-0.9.0.jar:/home/siruiw4/.m2/repository/at/favre/lib/bytes/1.3.0/bytes-1.3.0.jar:/home/siruiw4/.m2/repository/org/apache/nifi/nifi-xml-processing/1.18.0-SNAPSHOT/nifi-xml-processing-1.18.0-SNAPSHOT.jar:/home/siruiw4/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/home/siruiw4/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.jar:/home/siruiw4/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.jar:/home/siruiw4/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.jar:/home/siruiw4/.m2/repository/org/apache/nifi/nifi-client-dto/1.18.0-SNAPSHOT/nifi-client-dto-1.18.0-SNAPSHOT.jar:/home/siruiw4/.m2/repository/io/swagger/swagger-annotations/1.6.6/swagger-annotations-1.6.6.jar:/home/siruiw4/.m2/repository/org/apache/nifi/registry/nifi-registry-data-model/1.18.0-SNAPSHOT/nifi-registry-data-model-1.18.0-SNAPSHOT.jar:/home/siruiw4/.m2/repository/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar:/home/siruiw4/.m2/repository/javax/ws/rs/javax.ws.rs-api/2.1/javax.ws.rs-api-2.1.jar:/home/siruiw4/.m2/repository/org/apache/nifi/registry/nifi-registry-revision-entity-model/1.18.0-SNAPSHOT/nifi-registry-revision-entity-model-1.18.0-SNAPSHOT.jar:/home/siruiw4/.m2/repository/org/apache/nifi/nifi-extension-manifest-model/1.18.0-SNAPSHOT/nifi-extension-manifest-model-1.18.0-SNAPSHOT.jar:/home/siruiw4/.m2/repository/org/apache/nifi/c2-protocol-component-api/1.18.0-SNAPSHOT/c2-protocol-component-api-1.18.0-SNAPSHOT.jar:/home/siruiw4/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0-beta4/httpclient5-5.0-beta4.jar:/home/siruiw4/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0-beta7/httpcore5-5.0-beta7.jar:/home/siruiw4/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0-beta7/httpcore5-h2-5.0-beta7.jar:/home/siruiw4/.m2/repository/org/apache/httpcomponents/httpasyncclient/4.1.4/httpasyncclient-4.1.4.jar:/home/siruiw4/.m2/repository/org/apache/httpcomponents/httpcore/4.4.15/httpcore-4.4.15.jar:/home/siruiw4/.m2/repository/org/apache/httpcomponents/httpcore-nio/4.4.10/httpcore-nio-4.4.10.jar:/home/siruiw4/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/siruiw4/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/home/siruiw4/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.36/jcl-over-slf4j-1.7.36.jar:/home/siruiw4/.m2/repository/org/eclipse/jetty/jetty-server/9.4.48.v20220622/jetty-server-9.4.48.v20220622.jar:/home/siruiw4/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/home/siruiw4/.m2/repository/org/eclipse/jetty/jetty-http/9.4.48.v20220622/jetty-http-9.4.48.v20220622.jar:/home/siruiw4/.m2/repository/org/eclipse/jetty/jetty-util/9.4.48.v20220622/jetty-util-9.4.48.v20220622.jar:/home/siruiw4/.m2/repository/org/eclipse/jetty/jetty-io/9.4.48.v20220622/jetty-io-9.4.48.v20220622.jar:/home/siruiw4/.m2/repository/org/eclipse/jetty/jetty-servlet/9.4.48.v20220622/jetty-servlet-9.4.48.v20220622.jar:/home/siruiw4/.m2/repository/org/eclipse/jetty/jetty-security/9.4.48.v20220622/jetty-security-9.4.48.v20220622.jar:/home/siruiw4/.m2/repository/org/eclipse/jetty/jetty-util-ajax/9.4.48.v20220622/jetty-util-ajax-9.4.48.v20220622.jar:/home/siruiw4/.m2/repository/org/littleshoot/littleproxy/1.1.2/littleproxy-1.1.2.jar:/home/siruiw4/.m2/repository/com/google/guava/guava/20.0/guava-20.0.jar:/home/siruiw4/.m2/repository/io/netty/netty-all/4.1.79.Final/netty-all-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-buffer/4.1.79.Final/netty-buffer-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-codec/4.1.79.Final/netty-codec-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-codec-dns/4.1.79.Final/netty-codec-dns-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-codec-haproxy/4.1.79.Final/netty-codec-haproxy-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-codec-http/4.1.79.Final/netty-codec-http-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-codec-http2/4.1.79.Final/netty-codec-http2-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-codec-memcache/4.1.79.Final/netty-codec-memcache-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-codec-mqtt/4.1.79.Final/netty-codec-mqtt-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-codec-redis/4.1.79.Final/netty-codec-redis-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-codec-smtp/4.1.79.Final/netty-codec-smtp-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-codec-socks/4.1.79.Final/netty-codec-socks-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-codec-stomp/4.1.79.Final/netty-codec-stomp-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-codec-xml/4.1.79.Final/netty-codec-xml-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-common/4.1.79.Final/netty-common-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-handler/4.1.79.Final/netty-handler-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.79.Final/netty-transport-native-unix-common-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-handler-proxy/4.1.79.Final/netty-handler-proxy-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-resolver/4.1.79.Final/netty-resolver-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-resolver-dns/4.1.79.Final/netty-resolver-dns-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-transport/4.1.79.Final/netty-transport-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-transport-rxtx/4.1.79.Final/netty-transport-rxtx-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-transport-sctp/4.1.79.Final/netty-transport-sctp-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-transport-udt/4.1.79.Final/netty-transport-udt-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.79.Final/netty-transport-classes-epoll-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.79.Final/netty-transport-classes-kqueue-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.79.Final/netty-resolver-dns-classes-macos-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-transport-native-epoll/4.1.79.Final/netty-transport-native-epoll-4.1.79.Final-linux-x86_64.jar:/home/siruiw4/.m2/repository/io/netty/netty-transport-native-epoll/4.1.79.Final/netty-transport-native-epoll-4.1.79.Final-linux-aarch_64.jar:/home/siruiw4/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.79.Final/netty-transport-native-kqueue-4.1.79.Final-osx-x86_64.jar:/home/siruiw4/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.79.Final/netty-transport-native-kqueue-4.1.79.Final-osx-aarch_64.jar:/home/siruiw4/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.79.Final/netty-resolver-dns-native-macos-4.1.79.Final-osx-x86_64.jar:/home/siruiw4/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.79.Final/netty-resolver-dns-native-macos-4.1.79.Final-osx-aarch_64.jar:/home/siruiw4/.m2/repository/com/barchart/udt/barchart-udt-bundle/2.3.0/barchart-udt-bundle-2.3.0.jar:/home/siruiw4/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/home/siruiw4/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/home/siruiw4/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.5/jaxb-runtime-2.3.5.jar:/home/siruiw4/.m2/repository/org/glassfish/jaxb/txw2/2.3.5/txw2-2.3.5.jar:/home/siruiw4/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.12/istack-commons-runtime-3.0.12.jar:/home/siruiw4/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/home/siruiw4/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/home/siruiw4/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/siruiw4/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/home/siruiw4/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/siruiw4/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/home/siruiw4/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/home/siruiw4/.m2/repository/org/junit/vintage/junit-vintage-engine/5.8.2/junit-vintage-engine-5.8.2.jar:/home/siruiw4/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/siruiw4/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/siruiw4/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar:/home/siruiw4/.m2/repository/org/mockito/mockito-core/3.11.2/mockito-core-3.11.2.jar:/home/siruiw4/.m2/repository/net/bytebuddy/byte-buddy/1.11.3/byte-buddy-1.11.3.jar:/home/siruiw4/.m2/repository/net/bytebuddy/byte-buddy-agent/1.11.3/byte-buddy-agent-1.11.3.jar:/home/siruiw4/.m2/repository/org/objenesis/objenesis/3.2/objenesis-3.2.jar:/home/siruiw4/.m2/repository/org/mockito/mockito-junit-jupiter/3.11.2/mockito-junit-jupiter-3.11.2.jar:/home/siruiw4/.m2/repository/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar:/home/siruiw4/.m2/repository/org/codehaus/groovy/groovy-test/3.0.9/groovy-test-3.0.9.jar:/home/siruiw4/.m2/repository/org/codehaus/groovy/groovy/3.0.9/groovy-3.0.9.jar:"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="nondexPrintstack" value="false"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/siruiw4/nifi/nifi-commons/nifi-site-to-site-client/target/surefire/surefirebooter-20220829015135391_13.jar /home/siruiw4/nifi/nifi-commons/nifi-site-to-site-client/target/surefire 2022-08-29T01-51-34_952-jvmRun1 surefire-20220829015135391_11tmp surefire_2-20220829015135391_12tmp"/>
+    <property name="nondexLogging" value="CONFIG"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/siruiw4/nifi/nifi-commons/nifi-site-to-site-client/target/test-classes:/home/siruiw4/nifi/nifi-commons/nifi-site-to-site-client/target/classes:/home/siruiw4/.m2/repository/org/apache/nifi/nifi-api/1.18.0-SNAPSHOT/nifi-api-1.18.0-SNAPSHOT.jar:/home/siruiw4/.m2/repository/org/apache/nifi/nifi-framework-api/1.18.0-SNAPSHOT/nifi-framework-api-1.18.0-SNAPSHOT.jar:/home/siruiw4/.m2/repository/org/apache/nifi/nifi-utils/1.18.0-SNAPSHOT/nifi-utils-1.18.0-SNAPSHOT.jar:/home/siruiw4/.m2/repository/org/apache/nifi/nifi-security-utils/1.18.0-SNAPSHOT/nifi-security-utils-1.18.0-SNAPSHOT.jar:/home/siruiw4/.m2/repository/org/apache/nifi/nifi-deprecation-log/1.18.0-SNAPSHOT/nifi-deprecation-log-1.18.0-SNAPSHOT.jar:/home/siruiw4/.m2/repository/org/apache/nifi/nifi-security-utils-api/1.18.0-SNAPSHOT/nifi-security-utils-api-1.18.0-SNAPSHOT.jar:/home/siruiw4/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/home/siruiw4/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.70/bcprov-jdk15on-1.70.jar:/home/siruiw4/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.70/bcpkix-jdk15on-1.70.jar:/home/siruiw4/.m2/repository/org/bouncycastle/bcutil-jdk15on/1.70/bcutil-jdk15on-1.70.jar:/home/siruiw4/.m2/repository/org/apache/nifi/nifi-properties/1.18.0-SNAPSHOT/nifi-properties-1.18.0-SNAPSHOT.jar:/home/siruiw4/.m2/repository/org/apache/nifi/nifi-property-utils/1.18.0-SNAPSHOT/nifi-property-utils-1.18.0-SNAPSHOT.jar:/home/siruiw4/.m2/repository/at/favre/lib/bcrypt/0.9.0/bcrypt-0.9.0.jar:/home/siruiw4/.m2/repository/at/favre/lib/bytes/1.3.0/bytes-1.3.0.jar:/home/siruiw4/.m2/repository/org/apache/nifi/nifi-xml-processing/1.18.0-SNAPSHOT/nifi-xml-processing-1.18.0-SNAPSHOT.jar:/home/siruiw4/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/home/siruiw4/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.jar:/home/siruiw4/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.jar:/home/siruiw4/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.jar:/home/siruiw4/.m2/repository/org/apache/nifi/nifi-client-dto/1.18.0-SNAPSHOT/nifi-client-dto-1.18.0-SNAPSHOT.jar:/home/siruiw4/.m2/repository/io/swagger/swagger-annotations/1.6.6/swagger-annotations-1.6.6.jar:/home/siruiw4/.m2/repository/org/apache/nifi/registry/nifi-registry-data-model/1.18.0-SNAPSHOT/nifi-registry-data-model-1.18.0-SNAPSHOT.jar:/home/siruiw4/.m2/repository/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar:/home/siruiw4/.m2/repository/javax/ws/rs/javax.ws.rs-api/2.1/javax.ws.rs-api-2.1.jar:/home/siruiw4/.m2/repository/org/apache/nifi/registry/nifi-registry-revision-entity-model/1.18.0-SNAPSHOT/nifi-registry-revision-entity-model-1.18.0-SNAPSHOT.jar:/home/siruiw4/.m2/repository/org/apache/nifi/nifi-extension-manifest-model/1.18.0-SNAPSHOT/nifi-extension-manifest-model-1.18.0-SNAPSHOT.jar:/home/siruiw4/.m2/repository/org/apache/nifi/c2-protocol-component-api/1.18.0-SNAPSHOT/c2-protocol-component-api-1.18.0-SNAPSHOT.jar:/home/siruiw4/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0-beta4/httpclient5-5.0-beta4.jar:/home/siruiw4/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0-beta7/httpcore5-5.0-beta7.jar:/home/siruiw4/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0-beta7/httpcore5-h2-5.0-beta7.jar:/home/siruiw4/.m2/repository/org/apache/httpcomponents/httpasyncclient/4.1.4/httpasyncclient-4.1.4.jar:/home/siruiw4/.m2/repository/org/apache/httpcomponents/httpcore/4.4.15/httpcore-4.4.15.jar:/home/siruiw4/.m2/repository/org/apache/httpcomponents/httpcore-nio/4.4.10/httpcore-nio-4.4.10.jar:/home/siruiw4/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/siruiw4/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/home/siruiw4/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.36/jcl-over-slf4j-1.7.36.jar:/home/siruiw4/.m2/repository/org/eclipse/jetty/jetty-server/9.4.48.v20220622/jetty-server-9.4.48.v20220622.jar:/home/siruiw4/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/home/siruiw4/.m2/repository/org/eclipse/jetty/jetty-http/9.4.48.v20220622/jetty-http-9.4.48.v20220622.jar:/home/siruiw4/.m2/repository/org/eclipse/jetty/jetty-util/9.4.48.v20220622/jetty-util-9.4.48.v20220622.jar:/home/siruiw4/.m2/repository/org/eclipse/jetty/jetty-io/9.4.48.v20220622/jetty-io-9.4.48.v20220622.jar:/home/siruiw4/.m2/repository/org/eclipse/jetty/jetty-servlet/9.4.48.v20220622/jetty-servlet-9.4.48.v20220622.jar:/home/siruiw4/.m2/repository/org/eclipse/jetty/jetty-security/9.4.48.v20220622/jetty-security-9.4.48.v20220622.jar:/home/siruiw4/.m2/repository/org/eclipse/jetty/jetty-util-ajax/9.4.48.v20220622/jetty-util-ajax-9.4.48.v20220622.jar:/home/siruiw4/.m2/repository/org/littleshoot/littleproxy/1.1.2/littleproxy-1.1.2.jar:/home/siruiw4/.m2/repository/com/google/guava/guava/20.0/guava-20.0.jar:/home/siruiw4/.m2/repository/io/netty/netty-all/4.1.79.Final/netty-all-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-buffer/4.1.79.Final/netty-buffer-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-codec/4.1.79.Final/netty-codec-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-codec-dns/4.1.79.Final/netty-codec-dns-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-codec-haproxy/4.1.79.Final/netty-codec-haproxy-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-codec-http/4.1.79.Final/netty-codec-http-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-codec-http2/4.1.79.Final/netty-codec-http2-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-codec-memcache/4.1.79.Final/netty-codec-memcache-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-codec-mqtt/4.1.79.Final/netty-codec-mqtt-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-codec-redis/4.1.79.Final/netty-codec-redis-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-codec-smtp/4.1.79.Final/netty-codec-smtp-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-codec-socks/4.1.79.Final/netty-codec-socks-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-codec-stomp/4.1.79.Final/netty-codec-stomp-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-codec-xml/4.1.79.Final/netty-codec-xml-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-common/4.1.79.Final/netty-common-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-handler/4.1.79.Final/netty-handler-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.79.Final/netty-transport-native-unix-common-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-handler-proxy/4.1.79.Final/netty-handler-proxy-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-resolver/4.1.79.Final/netty-resolver-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-resolver-dns/4.1.79.Final/netty-resolver-dns-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-transport/4.1.79.Final/netty-transport-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-transport-rxtx/4.1.79.Final/netty-transport-rxtx-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-transport-sctp/4.1.79.Final/netty-transport-sctp-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-transport-udt/4.1.79.Final/netty-transport-udt-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.79.Final/netty-transport-classes-epoll-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.79.Final/netty-transport-classes-kqueue-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.79.Final/netty-resolver-dns-classes-macos-4.1.79.Final.jar:/home/siruiw4/.m2/repository/io/netty/netty-transport-native-epoll/4.1.79.Final/netty-transport-native-epoll-4.1.79.Final-linux-x86_64.jar:/home/siruiw4/.m2/repository/io/netty/netty-transport-native-epoll/4.1.79.Final/netty-transport-native-epoll-4.1.79.Final-linux-aarch_64.jar:/home/siruiw4/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.79.Final/netty-transport-native-kqueue-4.1.79.Final-osx-x86_64.jar:/home/siruiw4/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.79.Final/netty-transport-native-kqueue-4.1.79.Final-osx-aarch_64.jar:/home/siruiw4/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.79.Final/netty-resolver-dns-native-macos-4.1.79.Final-osx-x86_64.jar:/home/siruiw4/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.79.Final/netty-resolver-dns-native-macos-4.1.79.Final-osx-aarch_64.jar:/home/siruiw4/.m2/repository/com/barchart/udt/barchart-udt-bundle/2.3.0/barchart-udt-bundle-2.3.0.jar:/home/siruiw4/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/home/siruiw4/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/home/siruiw4/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.5/jaxb-runtime-2.3.5.jar:/home/siruiw4/.m2/repository/org/glassfish/jaxb/txw2/2.3.5/txw2-2.3.5.jar:/home/siruiw4/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.12/istack-commons-runtime-3.0.12.jar:/home/siruiw4/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/home/siruiw4/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/home/siruiw4/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/siruiw4/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/home/siruiw4/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/siruiw4/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/home/siruiw4/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/home/siruiw4/.m2/repository/org/junit/vintage/junit-vintage-engine/5.8.2/junit-vintage-engine-5.8.2.jar:/home/siruiw4/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/siruiw4/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/siruiw4/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar:/home/siruiw4/.m2/repository/org/mockito/mockito-core/3.11.2/mockito-core-3.11.2.jar:/home/siruiw4/.m2/repository/net/bytebuddy/byte-buddy/1.11.3/byte-buddy-1.11.3.jar:/home/siruiw4/.m2/repository/net/bytebuddy/byte-buddy-agent/1.11.3/byte-buddy-agent-1.11.3.jar:/home/siruiw4/.m2/repository/org/objenesis/objenesis/3.2/objenesis-3.2.jar:/home/siruiw4/.m2/repository/org/mockito/mockito-junit-jupiter/3.11.2/mockito-junit-jupiter-3.11.2.jar:/home/siruiw4/.m2/repository/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar:/home/siruiw4/.m2/repository/org/codehaus/groovy/groovy-test/3.0.9/groovy-test-3.0.9.jar:/home/siruiw4/.m2/repository/org/codehaus/groovy/groovy/3.0.9/groovy-3.0.9.jar:"/>
+    <property name="test" value="org.apache.nifi.remote.client.http.TestHttpClient#testSendSuccess"/>
+    <property name="nondexExecid" value="vGGUQHt1qpimtIv0u3i2eZpbRwOGORmmEFT2w1OAkQ="/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/siruiw4"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-07-19"/>
+    <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
+    <property name="basedir" value="/home/siruiw4/nifi/nifi-commons/nifi-site-to-site-client"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="nondexEnd" value="9223372036854775807"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="nondexFilter" value=".*"/>
+    <property name="nondexSeed" value="974622"/>
+    <property name="surefire.real.class.path" value="/home/siruiw4/nifi/nifi-commons/nifi-site-to-site-client/target/surefire/surefirebooter-20220829015135391_13.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.16+8-post-Ubuntu-0ubuntu120.04"/>
+    <property name="user.name" value="siruiw4"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.4.0-124-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/siruiw4/.m2/repository"/>
+    <property name="nondexDir" value="/home/siruiw4/nifi/nifi-commons/nifi-site-to-site-client/.nondex"/>
+    <property name="jetty.git.hash" value="6b67c5719d1f4371b33655ff2d047d24e171e49a"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-lts"/>
+    <property name="nondexJarDir" value="/home/siruiw4/nifi/nifi-commons/nifi-site-to-site-client/.nondex"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="11.0.16"/>
+    <property name="user.dir" value="/home/siruiw4/nifi/nifi-commons/nifi-site-to-site-client"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="nondexMode" value="FULL"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.version" value="11.0.16+8-post-Ubuntu-0ubuntu120.04"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="testSendSuccess" classname="org.apache.nifi.remote.client.http.TestHttpClient" time="1.753">
+    <error message="Failed to confirm transaction with Peer[url=http://localhost:42273/nifi-api] due to java.io.IOException: [Url=http://localhost:42273/nifi-api, TransferDirection=SEND, State=DATA_EXCHANGED] Sent data to peer Peer[url=http://localhost:42273/nifi-api] but calculated CRC32 Checksum as 622632923 while peer calculated CRC32 Checksum as 1071206772; canceling transaction and rolling back session" type="java.io.IOException"><![CDATA[java.io.IOException: Failed to confirm transaction with Peer[url=http://localhost:42273/nifi-api] due to java.io.IOException: [Url=http://localhost:42273/nifi-api, TransferDirection=SEND, State=DATA_EXCHANGED] Sent data to peer Peer[url=http://localhost:42273/nifi-api] but calculated CRC32 Checksum as 622632923 while peer calculated CRC32 Checksum as 1071206772; canceling transaction and rolling back session
+	at org.apache.nifi.remote.AbstractTransaction.confirm(AbstractTransaction.java:269)
+	at org.apache.nifi.remote.client.http.TestHttpClient.testSendIgnoreProxyError(TestHttpClient.java:940)
+	at org.apache.nifi.remote.client.http.TestHttpClient.testSend(TestHttpClient.java:805)
+	at org.apache.nifi.remote.client.http.TestHttpClient.testSendSuccess(TestHttpClient.java:830)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:55)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:223)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:175)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:139)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+Caused by: java.io.IOException: [Url=http://localhost:42273/nifi-api, TransferDirection=SEND, State=DATA_EXCHANGED] Sent data to peer Peer[url=http://localhost:42273/nifi-api] but calculated CRC32 Checksum as 622632923 while peer calculated CRC32 Checksum as 1071206772; canceling transaction and rolling back session
+	at org.apache.nifi.remote.AbstractTransaction.confirm(AbstractTransaction.java:254)
+	... 73 more
+]]></error>
+    <system-err><![CDATA[[main] INFO org.eclipse.jetty.util.log - Logging initialized @1888ms to org.eclipse.jetty.util.log.Slf4jLog
+[main] INFO org.apache.nifi.remote.client.http.TestHttpClient - SSL Connector: ServerConnector@2c0f7678{SSL, (ssl, http/1.1)}{0.0.0.0:0} - STOPPED
++~ Server@23c650a3{STOPPED}[9.4.48.v20220622] - STOPPED
++~ QueuedThreadPool[qtp1275143523]@4c012563{STOPPED,8<=0<=50,i=0,r=-1,q=0}[NO_TRY] - STOPPED
++? ScheduledExecutorScheduler@742d4e15{STOPPED} - STOPPED
++- ArrayByteBufferPool@4163f1cd{minBufferCapacity=0, maxBufferCapacity=65536, maxQueueLength=-1, factor=1024}
+|  +> java.util.ArrayList@46381d69(size=4)
+|     +: HeapMemory: 0/130023424
+|     +: DirectMemory: 0/130023424
+|     +: Indirect Buckets size=0
+|     +: Direct Buckets size=0
++? SslConnectionFactory@44d70181{SSL->http/1.1} - STOPPED
+|  +? Server@7cf7aee[provider=null,keyStore=file:///tmp/TemporaryKeyStore-5653818331435945827.p12,trustStore=null] - STOPPED
+|     +> trustAll=false
+|     +> Protocol Selections
+|     |  +> Enabled size=2
+|     |  |  +> TLSv1.2
+|     |  |  +> TLSv1.3
+|     |  +> Disabled size=4
+|     |     +> SSLv2Hello - ConfigExcluded:'SSLv2Hello'
+|     |     +> SSLv3 - ConfigExcluded:'SSLv3' JVM:disabled
+|     |     +> TLSv1 - JVM:disabled
+|     |     +> TLSv1.1 - JVM:disabled
+|     +> Cipher Suite Selections
+|        +> Enabled size=31
+|        |  +> TLS_AES_128_GCM_SHA256
+|        |  +> TLS_AES_256_GCM_SHA384
+|        |  +> TLS_CHACHA20_POLY1305_SHA256
+|        |  +> TLS_DHE_DSS_WITH_AES_128_CBC_SHA256
+|        |  +> TLS_DHE_DSS_WITH_AES_128_GCM_SHA256
+|        |  +> TLS_DHE_DSS_WITH_AES_256_CBC_SHA256
+|        |  +> TLS_DHE_DSS_WITH_AES_256_GCM_SHA384
+|        |  +> TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
+|        |  +> TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+|        |  +> TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
+|        |  +> TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+|        |  +> TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+|        |  +> TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256
+|        |  +> TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+|        |  +> TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384
+|        |  +> TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+|        |  +> TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
+|        |  +> TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+|        |  +> TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+|        |  +> TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+|        |  +> TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+|        |  +> TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+|        |  +> TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256
+|        |  +> TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256
+|        |  +> TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384
+|        |  +> TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384
+|        |  +> TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256
+|        |  +> TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256
+|        |  +> TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384
+|        |  +> TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384
+|        |  +> TLS_EMPTY_RENEGOTIATION_INFO_SCSV
+|        +> Disabled size=18
+|           +> TLS_DHE_DSS_WITH_AES_128_CBC_SHA - ConfigExcluded:'^.*_(MD5|SHA|SHA1)$'
+|           +> TLS_DHE_DSS_WITH_AES_256_CBC_SHA - ConfigExcluded:'^.*_(MD5|SHA|SHA1)$'
+|           +> TLS_DHE_RSA_WITH_AES_128_CBC_SHA - ConfigExcluded:'^.*_(MD5|SHA|SHA1)$'
+|           +> TLS_DHE_RSA_WITH_AES_256_CBC_SHA - ConfigExcluded:'^.*_(MD5|SHA|SHA1)$'
+|           +> TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA - ConfigExcluded:'^.*_(MD5|SHA|SHA1)$'
+|           +> TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA - ConfigExcluded:'^.*_(MD5|SHA|SHA1)$'
+|           +> TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA - ConfigExcluded:'^.*_(MD5|SHA|SHA1)$'
+|           +> TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA - ConfigExcluded:'^.*_(MD5|SHA|SHA1)$'
+|           +> TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA - ConfigExcluded:'^.*_(MD5|SHA|SHA1)$'
+|           +> TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA - ConfigExcluded:'^.*_(MD5|SHA|SHA1)$'
+|           +> TLS_ECDH_RSA_WITH_AES_128_CBC_SHA - ConfigExcluded:'^.*_(MD5|SHA|SHA1)$'
+|           +> TLS_ECDH_RSA_WITH_AES_256_CBC_SHA - ConfigExcluded:'^.*_(MD5|SHA|SHA1)$'
+|           +> TLS_RSA_WITH_AES_128_CBC_SHA - ConfigExcluded:'^.*_(MD5|SHA|SHA1)$', ConfigExcluded:'^TLS_RSA_.*$'
+|           +> TLS_RSA_WITH_AES_128_CBC_SHA256 - ConfigExcluded:'^TLS_RSA_.*$'
+|           +> TLS_RSA_WITH_AES_128_GCM_SHA256 - ConfigExcluded:'^TLS_RSA_.*$'
+|           +> TLS_RSA_WITH_AES_256_CBC_SHA - ConfigExcluded:'^.*_(MD5|SHA|SHA1)$', ConfigExcluded:'^TLS_RSA_.*$'
+|           +> TLS_RSA_WITH_AES_256_CBC_SHA256 - ConfigExcluded:'^TLS_RSA_.*$'
+|           +> TLS_RSA_WITH_AES_256_GCM_SHA384 - ConfigExcluded:'^TLS_RSA_.*$'
++? HttpConnectionFactory@6aa648b9[HTTP/1.1] - STOPPED
+|  +- HttpConfiguration@64711bf2{32768/8192,8192/8192,https://:0,[SecureRequestCustomizer@169da7f2]}
+|     +> customizers size=1
+|     |  +> SecureRequestCustomizer@169da7f2
+|     +> formEncodedMethods size=2
+|     |  +> POST
+|     |  +> PUT
+|     +> outputBufferSize=32768
+|     +> outputAggregationSize=8192
+|     +> requestHeaderSize=8192
+|     +> responseHeaderSize=8192
+|     +> headerCacheSize=1024
+|     +> secureScheme=https
+|     +> securePort=0
+|     +> idleTimeout=-1
+|     +> blockingTimeout=-1
+|     +> sendDateHeader=true
+|     +> sendServerVersion=true
+|     +> sendXPoweredBy=false
+|     +> delayDispatchUntilContent=true
+|     +> persistentConnectionsEnabled=true
+|     +> maxErrorDispatches=10
+|     +> minRequestDataRate=0
+|     +> minResponseDataRate=0
+|     +> cookieCompliance=RFC6265
+|     +> setRequestCookieCompliance=RFC6265
+|     +> notifyRemoteAsyncErrors=true
+|     +> relativeRedirectAllowed=false
++= SelectorManager@ServerConnector@2c0f7678{SSL, (ssl, http/1.1)}{0.0.0.0:0} - STOPPED
+key: +- bean, += managed, +~ unmanaged, +? auto, +: iterable, +] array, +@ map, +> undefined
+[main] INFO org.eclipse.jetty.server.Server - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 11.0.16+8-post-Ubuntu-0ubuntu120.04
+[main] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@59e32960{/nifi-api,null,AVAILABLE}
+[main] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c214cc0{/wrong/nifi-api,null,AVAILABLE}
+[main] INFO org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@236ab296{HTTP/1.1, (http/1.1)}{0.0.0.0:42273}
+[main] INFO org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@2c0f7678{SSL, (ssl, http/1.1)}{0.0.0.0:43199}
+[main] INFO org.eclipse.jetty.server.Server - Started @4804ms
+[main] INFO org.apache.nifi.remote.client.http.TestHttpClient - Starting server on port 42273 for HTTP, and 43199 for HTTPS
+[main] INFO org.littleshoot.proxy.impl.DefaultHttpProxyServer - Starting proxy at address: /127.0.0.1:37577
+[main] INFO org.littleshoot.proxy.impl.DefaultHttpProxyServer - Proxy listening with TCP transport
+[main] INFO org.littleshoot.proxy.impl.DefaultHttpProxyServer - Proxy started at address: /127.0.0.1:37577
+[main] INFO org.littleshoot.proxy.impl.DefaultHttpProxyServer - Starting proxy at address: /127.0.0.1:38645
+[main] INFO org.littleshoot.proxy.impl.DefaultHttpProxyServer - Proxy listening with TCP transport
+[main] INFO org.littleshoot.proxy.impl.DefaultHttpProxyServer - Proxy started at address: /127.0.0.1:38645
+[Http Site-to-Site PeerSelector] INFO org.apache.nifi.remote.client.PeerSelector - Successfully refreshed peer status cache; remote group consists of 1 peers
+[main] INFO org.apache.nifi.remote.client.PeerSelector - Successfully refreshed peer status cache; remote group consists of 1 peers
+[main] INFO org.apache.nifi.remote.client.http.TestHttpClient - 0: 121 bytes have been written.
+[main] INFO org.apache.nifi.remote.client.http.TestHttpClient - 1: 242 bytes have been written.
+[main] INFO org.apache.nifi.remote.client.http.TestHttpClient - 2: 363 bytes have been written.
+[main] INFO org.apache.nifi.remote.client.http.TestHttpClient - 3: 484 bytes have been written.
+[main] INFO org.apache.nifi.remote.client.http.TestHttpClient - 4: 605 bytes have been written.
+[main] INFO org.apache.nifi.remote.client.http.TestHttpClient - 5: 726 bytes have been written.
+[main] INFO org.apache.nifi.remote.client.http.TestHttpClient - 6: 847 bytes have been written.
+[main] INFO org.apache.nifi.remote.client.http.TestHttpClient - 7: 968 bytes have been written.
+[main] INFO org.apache.nifi.remote.client.http.TestHttpClient - 8: 1089 bytes have been written.
+[main] INFO org.apache.nifi.remote.client.http.TestHttpClient - 9: 1210 bytes have been written.
+[main] INFO org.apache.nifi.remote.client.http.TestHttpClient - 10: 1331 bytes have been written.
+[main] INFO org.apache.nifi.remote.client.http.TestHttpClient - 11: 1452 bytes have been written.
+[main] INFO org.apache.nifi.remote.client.http.TestHttpClient - 12: 1573 bytes have been written.
+[main] INFO org.apache.nifi.remote.client.http.TestHttpClient - 13: 1694 bytes have been written.
+[main] INFO org.apache.nifi.remote.client.http.TestHttpClient - 14: 1815 bytes have been written.
+[main] INFO org.apache.nifi.remote.client.http.TestHttpClient - 15: 1936 bytes have been written.
+[main] INFO org.apache.nifi.remote.client.http.TestHttpClient - 16: 2057 bytes have been written.
+[main] INFO org.apache.nifi.remote.client.http.TestHttpClient - 17: 2178 bytes have been written.
+[main] INFO org.apache.nifi.remote.client.http.TestHttpClient - 18: 2299 bytes have been written.
+[main] INFO org.apache.nifi.remote.client.http.TestHttpClient - 19: 2420 bytes have been written.
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received org.apache.nifi.remote.util.StandardDataPacket@4afabfe0
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received: Example contents from client., {Client attr 1=Client attr 1 value, Client attr 2=Client attr 2 value}
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received org.apache.nifi.remote.util.StandardDataPacket@752e0559
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received: Example contents from client., {Client attr 1=Client attr 1 value, Client attr 2=Client attr 2 value}
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received org.apache.nifi.remote.util.StandardDataPacket@c205fed
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received: Example contents from client., {Client attr 1=Client attr 1 value, Client attr 2=Client attr 2 value}
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received org.apache.nifi.remote.util.StandardDataPacket@7a59c1ee
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received: Example contents from client., {Client attr 1=Client attr 1 value, Client attr 2=Client attr 2 value}
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received org.apache.nifi.remote.util.StandardDataPacket@65c364fa
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received: Example contents from client., {Client attr 2=Client attr 2 value, Client attr 1=Client attr 1 value}
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received org.apache.nifi.remote.util.StandardDataPacket@6042a1d6
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received: Example contents from client., {Client attr 2=Client attr 2 value, Client attr 1=Client attr 1 value}
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received org.apache.nifi.remote.util.StandardDataPacket@6e135504
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received: Example contents from client., {Client attr 2=Client attr 2 value, Client attr 1=Client attr 1 value}
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received org.apache.nifi.remote.util.StandardDataPacket@5a71bf99
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received: Example contents from client., {Client attr 1=Client attr 1 value, Client attr 2=Client attr 2 value}
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received org.apache.nifi.remote.util.StandardDataPacket@24ebe499
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received: Example contents from client., {Client attr 2=Client attr 2 value, Client attr 1=Client attr 1 value}
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received org.apache.nifi.remote.util.StandardDataPacket@5152bdc3
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received: Example contents from client., {Client attr 1=Client attr 1 value, Client attr 2=Client attr 2 value}
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received org.apache.nifi.remote.util.StandardDataPacket@251d6998
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received: Example contents from client., {Client attr 1=Client attr 1 value, Client attr 2=Client attr 2 value}
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received org.apache.nifi.remote.util.StandardDataPacket@724797d5
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received: Example contents from client., {Client attr 2=Client attr 2 value, Client attr 1=Client attr 1 value}
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received org.apache.nifi.remote.util.StandardDataPacket@9f36a28
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received: Example contents from client., {Client attr 2=Client attr 2 value, Client attr 1=Client attr 1 value}
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received org.apache.nifi.remote.util.StandardDataPacket@4d0b6270
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received: Example contents from client., {Client attr 2=Client attr 2 value, Client attr 1=Client attr 1 value}
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received org.apache.nifi.remote.util.StandardDataPacket@39483e0
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received: Example contents from client., {Client attr 2=Client attr 2 value, Client attr 1=Client attr 1 value}
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received org.apache.nifi.remote.util.StandardDataPacket@4da34578
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received: Example contents from client., {Client attr 1=Client attr 1 value, Client attr 2=Client attr 2 value}
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received org.apache.nifi.remote.util.StandardDataPacket@5f13d4ce
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received: Example contents from client., {Client attr 1=Client attr 1 value, Client attr 2=Client attr 2 value}
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received org.apache.nifi.remote.util.StandardDataPacket@499d35be
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received: Example contents from client., {Client attr 1=Client attr 1 value, Client attr 2=Client attr 2 value}
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received org.apache.nifi.remote.util.StandardDataPacket@6eb134ee
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received: Example contents from client., {Client attr 1=Client attr 1 value, Client attr 2=Client attr 2 value}
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received org.apache.nifi.remote.util.StandardDataPacket@39ee24c5
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - received: Example contents from client., {Client attr 1=Client attr 1 value, Client attr 2=Client attr 2 value}
+[qtp1275143523-20] INFO org.apache.nifi.remote.client.http.TestHttpClient - finish receiving data packets.
+[main] WARN org.apache.nifi.remote.client.http.HttpClient$3 - [Url=http://localhost:42273/nifi-api, TransferDirection=SEND, State=DATA_EXCHANGED] BAD_CHECKSUM, Expected the transaction is canceled on server, but received Transaction Finished.
+]]></system-err>
+  </testcase>
+</testsuite>

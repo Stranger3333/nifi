@@ -1,0 +1,2168 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] Inspecting build with total of 46 modules...
+[[1;34mINFO[m] Installing Nexus Staging features:
+[[1;34mINFO[m]   ... total of 46 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Build Order:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] nifi                                                               [pom]
+[[1;34mINFO[m] nifi-commons                                                       [pom]
+[[1;34mINFO[m] nifi-api                                                           [jar]
+[[1;34mINFO[m] nifi-framework-api                                                 [jar]
+[[1;34mINFO[m] nifi-utils                                                         [jar]
+[[1;34mINFO[m] nifi-data-provenance-utils                                         [jar]
+[[1;34mINFO[m] nifi-deprecation-log                                               [jar]
+[[1;34mINFO[m] nifi-parameter                                                     [jar]
+[[1;34mINFO[m] nifi-uuid5                                                         [jar]
+[[1;34mINFO[m] nifi-expression-language                                           [jar]
+[[1;34mINFO[m] nifi-security-utils-api                                            [jar]
+[[1;34mINFO[m] nifi-property-utils                                                [jar]
+[[1;34mINFO[m] nifi-properties                                                    [jar]
+[[1;34mINFO[m] nifi-security-utils                                                [jar]
+[[1;34mINFO[m] nifi-xml-processing                                                [jar]
+[[1;34mINFO[m] nifi-metrics                                                       [jar]
+[[1;34mINFO[m] nifi-registry                                                      [pom]
+[[1;34mINFO[m] nifi-registry-core                                                 [pom]
+[[1;34mINFO[m] nifi-registry-revision                                             [pom]
+[[1;34mINFO[m] nifi-registry-revision-entity-model                                [jar]
+[[1;34mINFO[m] nifi-manifest                                                      [pom]
+[[1;34mINFO[m] nifi-extension-manifest-model                                      [jar]
+[[1;34mINFO[m] nifi-registry-data-model                                           [jar]
+[[1;34mINFO[m] c2                                                                 [pom]
+[[1;34mINFO[m] c2-protocol                                                        [pom]
+[[1;34mINFO[m] c2-protocol-component-api                                          [jar]
+[[1;34mINFO[m] nifi-nar-bundles                                                   [pom]
+[[1;34mINFO[m] nifi-framework-bundle                                              [pom]
+[[1;34mINFO[m] nifi-framework                                                     [pom]
+[[1;34mINFO[m] nifi-client-dto                                                    [jar]
+[[1;34mINFO[m] nifi-site-to-site-client                                           [jar]
+[[1;34mINFO[m] nifi-server-api                                                    [jar]
+[[1;34mINFO[m] nifi-nar-utils                                                     [jar]
+[[1;34mINFO[m] nifi-extension-manifest-parser                                     [jar]
+[[1;34mINFO[m] nifi-runtime-manifest-core                                         [jar]
+[[1;34mINFO[m] nifi-framework-nar-utils                                           [jar]
+[[1;34mINFO[m] nifi-mock-authorizer                                               [jar]
+[[1;34mINFO[m] nifi-framework-authorization                                       [jar]
+[[1;34mINFO[m] nifi-registry-security-utils                                       [jar]
+[[1;34mINFO[m] nifi-registry-client                                               [jar]
+[[1;34mINFO[m] nifi-framework-core-api                                            [jar]
+[[1;34mINFO[m] nifi-mock                                                          [jar]
+[[1;34mINFO[m] nifi-extension-utils                                               [pom]
+[[1;34mINFO[m] nifi-reporting-utils                                               [jar]
+[[1;34mINFO[m] nifi-azure-bundle                                                  [pom]
+[[1;34mINFO[m] nifi-azure-reporting-task                                          [jar]
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------< [0;36morg.apache.nifi:nifi[0;1m >------------------------[m
+[[1;34mINFO[m] [1mBuilding nifi 1.18.0-SNAPSHOT                                     [1/46][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi[0;1m ---[m
+[[1;34mINFO[m] No site descriptor found: nothing to attach.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi/1.18.0-SNAPSHOT/nifi-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------------< [0;36morg.apache.nifi:nifi-commons[0;1m >--------------------[m
+[[1;34mINFO[m] [1mBuilding nifi-commons 1.18.0-SNAPSHOT                             [2/46][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-commons[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-commons[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-commons[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-commons[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-commons[0;1m ---[m
+[[1;34mINFO[m] No site descriptor found: nothing to attach.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-commons[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-commons/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-commons/1.18.0-SNAPSHOT/nifi-commons-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------------< [0;36morg.apache.nifi:nifi-api[0;1m >----------------------[m
+[[1;34mINFO[m] [1mBuilding nifi-api 1.18.0-SNAPSHOT                                 [3/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-api[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mnifi-api[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-api/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-api[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mnifi-api[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-api[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-api[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-api[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-api[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-api[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-api/target/nifi-api-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-api/1.18.0-SNAPSHOT/nifi-api-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-api/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-api/1.18.0-SNAPSHOT/nifi-api-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------< [0;36morg.apache.nifi:nifi-framework-api[0;1m >-----------------[m
+[[1;34mINFO[m] [1mBuilding nifi-framework-api 1.18.0-SNAPSHOT                       [4/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-framework-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-framework-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-framework-api[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mnifi-framework-api[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-framework-api/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-framework-api[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mnifi-framework-api[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-framework-api/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-framework-api[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-framework-api[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-framework-api[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-framework-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-framework-api[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-framework-api[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-framework-api/target/nifi-framework-api-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-framework-api/1.18.0-SNAPSHOT/nifi-framework-api-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-framework-api/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-framework-api/1.18.0-SNAPSHOT/nifi-framework-api-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------------< [0;36morg.apache.nifi:nifi-utils[0;1m >---------------------[m
+[[1;34mINFO[m] [1mBuilding nifi-utils 1.18.0-SNAPSHOT                               [5/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-utils[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-utils[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-utils[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mnifi-utils[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-commons/nifi-utils/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-utils[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mnifi-utils[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-utils[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-utils[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Using Groovy-Eclipse compiler to compile both Java and Groovy files
+[[1;34mINFO[m] Compiling in a forked process using /home/siruiw4/.m2/repository/org/codehaus/groovy/groovy-eclipse-batch/3.0.8-01/groovy-eclipse-batch-3.0.8-01.jar
+[[1;33mWARNING[m] Error output from groovy-eclipse compiler:
+----------
+1. WARNING in /home/siruiw4/nifi/nifi-commons/nifi-utils/src/test/groovy/org/apache/nifi/util/TestFormatUtilsGroovy.groovy (at line 26)
+	class TestFormatUtilsGroovy extends GroovyTestCase {
+	                                    ^^^^^^^^^^^^^^
+The type GroovyTestCase is deprecated
+----------
+1 problem (1 warning)
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-utils[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-utils[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-utils[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-utils[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-commons/nifi-utils/target/nifi-utils-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-utils/1.18.0-SNAPSHOT/nifi-utils-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-commons/nifi-utils/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-utils/1.18.0-SNAPSHOT/nifi-utils-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------< [0;36morg.apache.nifi:nifi-data-provenance-utils[0;1m >-------------[m
+[[1;34mINFO[m] [1mBuilding nifi-data-provenance-utils 1.18.0-SNAPSHOT               [6/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-data-provenance-utils[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-data-provenance-utils[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-data-provenance-utils[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mnifi-data-provenance-utils[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-commons/nifi-data-provenance-utils/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-data-provenance-utils[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 14 source files to /home/siruiw4/nifi/nifi-commons/nifi-data-provenance-utils/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mnifi-data-provenance-utils[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-commons/nifi-data-provenance-utils/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-data-provenance-utils[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-data-provenance-utils[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-data-provenance-utils[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-data-provenance-utils[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/siruiw4/nifi/nifi-commons/nifi-data-provenance-utils/target/nifi-data-provenance-utils-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-data-provenance-utils[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-data-provenance-utils[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-commons/nifi-data-provenance-utils/target/nifi-data-provenance-utils-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-data-provenance-utils/1.18.0-SNAPSHOT/nifi-data-provenance-utils-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-commons/nifi-data-provenance-utils/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-data-provenance-utils/1.18.0-SNAPSHOT/nifi-data-provenance-utils-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------< [0;36morg.apache.nifi:nifi-deprecation-log[0;1m >----------------[m
+[[1;34mINFO[m] [1mBuilding nifi-deprecation-log 1.18.0-SNAPSHOT                     [7/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-deprecation-log[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-deprecation-log[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-deprecation-log[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mnifi-deprecation-log[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-commons/nifi-deprecation-log/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-deprecation-log[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mnifi-deprecation-log[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-commons/nifi-deprecation-log/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-deprecation-log[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-deprecation-log[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-deprecation-log[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-deprecation-log[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-deprecation-log[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-deprecation-log[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-commons/nifi-deprecation-log/target/nifi-deprecation-log-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-deprecation-log/1.18.0-SNAPSHOT/nifi-deprecation-log-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-commons/nifi-deprecation-log/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-deprecation-log/1.18.0-SNAPSHOT/nifi-deprecation-log-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36morg.apache.nifi:nifi-parameter[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding nifi-parameter 1.18.0-SNAPSHOT                           [8/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-parameter[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-parameter[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-parameter[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mnifi-parameter[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-commons/nifi-parameter/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-parameter[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 12 source files to /home/siruiw4/nifi/nifi-commons/nifi-parameter/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mnifi-parameter[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-commons/nifi-parameter/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-parameter[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 3 source files to /home/siruiw4/nifi/nifi-commons/nifi-parameter/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-parameter[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-parameter[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-parameter[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/siruiw4/nifi/nifi-commons/nifi-parameter/target/nifi-parameter-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-parameter[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-parameter[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-commons/nifi-parameter/target/nifi-parameter-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-parameter/1.18.0-SNAPSHOT/nifi-parameter-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-commons/nifi-parameter/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-parameter/1.18.0-SNAPSHOT/nifi-parameter-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------------< [0;36morg.apache.nifi:nifi-uuid5[0;1m >---------------------[m
+[[1;34mINFO[m] [1mBuilding nifi-uuid5 1.18.0-SNAPSHOT                               [9/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-uuid5[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-uuid5[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-uuid5[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mnifi-uuid5[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-commons/nifi-uuid5/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-uuid5[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 1 source file to /home/siruiw4/nifi/nifi-commons/nifi-uuid5/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mnifi-uuid5[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-commons/nifi-uuid5/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-uuid5[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-uuid5[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-uuid5[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-uuid5[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/siruiw4/nifi/nifi-commons/nifi-uuid5/target/nifi-uuid5-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-uuid5[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-uuid5[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-commons/nifi-uuid5/target/nifi-uuid5-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-uuid5/1.18.0-SNAPSHOT/nifi-uuid5-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-commons/nifi-uuid5/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-uuid5/1.18.0-SNAPSHOT/nifi-uuid5-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------< [0;36morg.apache.nifi:nifi-expression-language[0;1m >--------------[m
+[[1;34mINFO[m] [1mBuilding nifi-expression-language 1.18.0-SNAPSHOT                [10/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-expression-language[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-expression-language[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mantlr3-maven-plugin:3.5.2:antlr[m [1m(default)[m @ [36mnifi-expression-language[0;1m ---[m
+[[1;34mINFO[m] ANTLR: Processing source directory /home/siruiw4/nifi/nifi-commons/nifi-expression-language/src/main/antlr3
+Output file /home/siruiw4/nifi/nifi-commons/nifi-expression-language/target/generated-sources/antlr3/org/apache/nifi/attribute/expression/language/antlr/AttributeExpressionLexer.java does not exist: must build /home/siruiw4/nifi/nifi-commons/nifi-expression-language/src/main/antlr3/org/apache/nifi/attribute/expression/language/antlr/AttributeExpressionLexer.g
+org/apache/nifi/attribute/expression/language/antlr/AttributeExpressionLexer.g
+Output file /home/siruiw4/nifi/nifi-commons/nifi-expression-language/target/generated-sources/antlr3/org/apache/nifi/attribute/expression/language/antlr/AttributeExpressionParser.java does not exist: must build /home/siruiw4/nifi/nifi-commons/nifi-expression-language/src/main/antlr3/org/apache/nifi/attribute/expression/language/antlr/AttributeExpressionParser.g
+org/apache/nifi/attribute/expression/language/antlr/AttributeExpressionParser.g
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-expression-language[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mnifi-expression-language[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-commons/nifi-expression-language/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-expression-language[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 150 source files to /home/siruiw4/nifi/nifi-commons/nifi-expression-language/target/classes
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-commons/nifi-expression-language/src/main/java/org/apache/nifi/attribute/expression/language/StandardPropertyValue.java:[122,54] [deprecation] getTimeDuration(String,TimeUnit) in FormatUtils has been deprecated
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mnifi-expression-language[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-expression-language[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 3 source files to /home/siruiw4/nifi/nifi-commons/nifi-expression-language/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-expression-language[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Using Groovy-Eclipse compiler to compile both Java and Groovy files
+[[1;34mINFO[m] Compiling in a forked process using /home/siruiw4/.m2/repository/org/codehaus/groovy/groovy-eclipse-batch/3.0.8-01/groovy-eclipse-batch-3.0.8-01.jar
+[[1;33mWARNING[m] Error output from groovy-eclipse compiler:
+----------
+1. WARNING in /home/siruiw4/nifi/nifi-commons/nifi-expression-language/src/test/groovy/org/apache/nifi/attribute/expression/language/QueryGroovyTest.groovy (at line 28)
+	class QueryGroovyTest extends GroovyTestCase {
+	                              ^^^^^^^^^^^^^^
+The type GroovyTestCase is deprecated
+----------
+1 problem (1 warning)
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-expression-language[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-expression-language[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/siruiw4/nifi/nifi-commons/nifi-expression-language/target/nifi-expression-language-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-expression-language[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-expression-language[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-commons/nifi-expression-language/target/nifi-expression-language-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-expression-language/1.18.0-SNAPSHOT/nifi-expression-language-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-commons/nifi-expression-language/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-expression-language/1.18.0-SNAPSHOT/nifi-expression-language-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------< [0;36morg.apache.nifi:nifi-security-utils-api[0;1m >---------------[m
+[[1;34mINFO[m] [1mBuilding nifi-security-utils-api 1.18.0-SNAPSHOT                 [11/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-security-utils-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-security-utils-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-security-utils-api[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mnifi-security-utils-api[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-commons/nifi-security-utils-api/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-security-utils-api[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mnifi-security-utils-api[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-commons/nifi-security-utils-api/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-security-utils-api[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-security-utils-api[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Using Groovy-Eclipse compiler to compile both Java and Groovy files
+[[1;34mINFO[m] Compiling in a forked process using /home/siruiw4/.m2/repository/org/codehaus/groovy/groovy-eclipse-batch/3.0.8-01/groovy-eclipse-batch-3.0.8-01.jar
+[[1;33mWARNING[m] Error output from groovy-eclipse compiler:
+----------
+1. WARNING in /home/siruiw4/nifi/nifi-commons/nifi-security-utils-api/src/test/groovy/org/apache/nifi/security/util/TlsConfigurationTest.groovy (at line 26)
+	class TlsConfigurationTest extends GroovyTestCase {
+	                                   ^^^^^^^^^^^^^^
+The type GroovyTestCase is deprecated
+----------
+1 problem (1 warning)
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-security-utils-api[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-security-utils-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-security-utils-api[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-security-utils-api[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-commons/nifi-security-utils-api/target/nifi-security-utils-api-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-security-utils-api/1.18.0-SNAPSHOT/nifi-security-utils-api-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-commons/nifi-security-utils-api/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-security-utils-api/1.18.0-SNAPSHOT/nifi-security-utils-api-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------< [0;36morg.apache.nifi:nifi-property-utils[0;1m >-----------------[m
+[[1;34mINFO[m] [1mBuilding nifi-property-utils 1.18.0-SNAPSHOT                     [12/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-property-utils[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-property-utils[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-property-utils[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mnifi-property-utils[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-commons/nifi-property-utils/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-property-utils[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mnifi-property-utils[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-commons/nifi-property-utils/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-property-utils[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-property-utils[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-property-utils[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-property-utils[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-property-utils[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-property-utils[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-commons/nifi-property-utils/target/nifi-property-utils-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-property-utils/1.18.0-SNAPSHOT/nifi-property-utils-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-commons/nifi-property-utils/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-property-utils/1.18.0-SNAPSHOT/nifi-property-utils-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------< [0;36morg.apache.nifi:nifi-properties[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding nifi-properties 1.18.0-SNAPSHOT                         [13/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-properties[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-properties[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-properties[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mnifi-properties[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-commons/nifi-properties/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-properties[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mnifi-properties[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-properties[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-properties[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-properties[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-properties[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-properties[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-properties[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-commons/nifi-properties/target/nifi-properties-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-properties/1.18.0-SNAPSHOT/nifi-properties-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-commons/nifi-properties/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-properties/1.18.0-SNAPSHOT/nifi-properties-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------< [0;36morg.apache.nifi:nifi-security-utils[0;1m >-----------------[m
+[[1;34mINFO[m] [1mBuilding nifi-security-utils 1.18.0-SNAPSHOT                     [14/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-security-utils[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-security-utils[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-security-utils[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mnifi-security-utils[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-commons/nifi-security-utils/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-security-utils[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mnifi-security-utils[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] Copying 12 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-security-utils[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-security-utils[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Using Groovy-Eclipse compiler to compile both Java and Groovy files
+[[1;34mINFO[m] Compiling in a forked process using /home/siruiw4/.m2/repository/org/codehaus/groovy/groovy-eclipse-batch/3.0.8-01/groovy-eclipse-batch-3.0.8-01.jar
+[[1;33mWARNING[m] Error output from groovy-eclipse compiler:
+----------
+1. WARNING in /home/siruiw4/nifi/nifi-commons/nifi-security-utils/src/test/groovy/org/apache/nifi/security/util/crypto/CipherUtilityGroovyTest.groovy (at line 30)
+	class CipherUtilityGroovyTest extends GroovyTestCase {
+	                                      ^^^^^^^^^^^^^^
+The type GroovyTestCase is deprecated
+----------
+----------
+2. WARNING in /home/siruiw4/nifi/nifi-commons/nifi-security-utils/src/test/groovy/org/apache/nifi/security/util/crypto/HashAlgorithmTest.groovy (at line 28)
+	class HashAlgorithmTest extends GroovyTestCase {
+	                                ^^^^^^^^^^^^^^
+The type GroovyTestCase is deprecated
+----------
+----------
+3. WARNING in /home/siruiw4/nifi/nifi-commons/nifi-security-utils/src/test/groovy/org/apache/nifi/security/util/crypto/Argon2CipherProviderGroovyTest.groovy (at line 38)
+	class Argon2CipherProviderGroovyTest extends GroovyTestCase {
+	                                             ^^^^^^^^^^^^^^
+The type GroovyTestCase is deprecated
+----------
+----------
+4. WARNING in /home/siruiw4/nifi/nifi-commons/nifi-security-utils/src/test/groovy/org/apache/nifi/security/util/crypto/CipherProviderFactoryGroovyTest.groovy (at line 28)
+	class CipherProviderFactoryGroovyTest extends GroovyTestCase {
+	                                              ^^^^^^^^^^^^^^
+The type GroovyTestCase is deprecated
+----------
+----------
+5. WARNING in /home/siruiw4/nifi/nifi-commons/nifi-security-utils/src/test/groovy/org/apache/nifi/security/util/CertificateUtilsTest.groovy (at line 47)
+	class CertificateUtilsTest extends GroovyTestCase {
+	                                   ^^^^^^^^^^^^^^
+The type GroovyTestCase is deprecated
+----------
+----------
+6. WARNING in /home/siruiw4/nifi/nifi-commons/nifi-security-utils/src/test/groovy/org/apache/nifi/security/util/crypto/NiFiLegacyCipherProviderGroovyTest.groovy (at line 75)
+	NiFiLegacyCipherProvider cipherProvider = new NiFiLegacyCipherProvider()
+	^^^^^^^^^^^^^^^^^^^^^^^^
+The type NiFiLegacyCipherProvider is deprecated
+----------
+7. WARNING in /home/siruiw4/nifi/nifi-commons/nifi-security-utils/src/test/groovy/org/apache/nifi/security/util/crypto/NiFiLegacyCipherProviderGroovyTest.groovy (at line 110)
+	NiFiLegacyCipherProvider cipherProvider = new NiFiLegacyCipherProvider()
+	^^^^^^^^^^^^^^^^^^^^^^^^
+The type NiFiLegacyCipherProvider is deprecated
+----------
+8. WARNING in /home/siruiw4/nifi/nifi-commons/nifi-security-utils/src/test/groovy/org/apache/nifi/security/util/crypto/NiFiLegacyCipherProviderGroovyTest.groovy (at line 140)
+	NiFiLegacyCipherProvider cipherProvider = new NiFiLegacyCipherProvider()
+	^^^^^^^^^^^^^^^^^^^^^^^^
+The type NiFiLegacyCipherProvider is deprecated
+----------
+9. WARNING in /home/siruiw4/nifi/nifi-commons/nifi-security-utils/src/test/groovy/org/apache/nifi/security/util/crypto/NiFiLegacyCipherProviderGroovyTest.groovy (at line 175)
+	NiFiLegacyCipherProvider cipherProvider = new NiFiLegacyCipherProvider()
+	^^^^^^^^^^^^^^^^^^^^^^^^
+The type NiFiLegacyCipherProvider is deprecated
+----------
+10. WARNING in /home/siruiw4/nifi/nifi-commons/nifi-security-utils/src/test/groovy/org/apache/nifi/security/util/crypto/NiFiLegacyCipherProviderGroovyTest.groovy (at line 209)
+	NiFiLegacyCipherProvider cipherProvider = new NiFiLegacyCipherProvider()
+	^^^^^^^^^^^^^^^^^^^^^^^^
+The type NiFiLegacyCipherProvider is deprecated
+----------
+----------
+11. WARNING in /home/siruiw4/nifi/nifi-commons/nifi-security-utils/src/test/groovy/org/apache/nifi/security/util/crypto/HashServiceTest.groovy (at line 32)
+	class HashServiceTest extends GroovyTestCase {
+	                              ^^^^^^^^^^^^^^
+The type GroovyTestCase is deprecated
+----------
+11 problems (11 warnings)
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-security-utils[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-security-utils[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-security-utils[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-security-utils[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-commons/nifi-security-utils/target/nifi-security-utils-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-security-utils/1.18.0-SNAPSHOT/nifi-security-utils-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-commons/nifi-security-utils/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-security-utils/1.18.0-SNAPSHOT/nifi-security-utils-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------< [0;36morg.apache.nifi:nifi-xml-processing[0;1m >-----------------[m
+[[1;34mINFO[m] [1mBuilding nifi-xml-processing 1.18.0-SNAPSHOT                     [15/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-xml-processing[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-xml-processing[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-xml-processing[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mnifi-xml-processing[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-commons/nifi-xml-processing/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-xml-processing[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mnifi-xml-processing[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] Copying 6 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-xml-processing[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-xml-processing[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-xml-processing[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-xml-processing[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-xml-processing[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m>>> [0;32mspotbugs-maven-plugin:4.6.0.0:check[m [1m(default)[0;1m > [0;1m:spotbugs[m @ [36mnifi-xml-processing[0;1m >>>[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspotbugs-maven-plugin:4.6.0.0:spotbugs[m [1m(spotbugs)[m @ [36mnifi-xml-processing[0;1m ---[m
+[[1;34mINFO[m] Fork Value is true
+[[1;34mINFO[m] Done SpotBugs Analysis....
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m<<< [0;32mspotbugs-maven-plugin:4.6.0.0:check[m [1m(default)[0;1m < [0;1m:spotbugs[m @ [36mnifi-xml-processing[0;1m <<<[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspotbugs-maven-plugin:4.6.0.0:check[m [1m(default)[m @ [36mnifi-xml-processing[0;1m ---[m
+[[1;34mINFO[m] BugInstance size is 0
+[[1;34mINFO[m] Error size is 0
+[[1;34mINFO[m] No errors/warnings found
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-xml-processing[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-commons/nifi-xml-processing/target/nifi-xml-processing-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-xml-processing/1.18.0-SNAPSHOT/nifi-xml-processing-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-commons/nifi-xml-processing/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-xml-processing/1.18.0-SNAPSHOT/nifi-xml-processing-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------------< [0;36morg.apache.nifi:nifi-metrics[0;1m >--------------------[m
+[[1;34mINFO[m] [1mBuilding nifi-metrics 1.18.0-SNAPSHOT                            [16/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-metrics[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-metrics[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuild-helper-maven-plugin:1.5:add-source[m [1m(add-source)[m @ [36mnifi-metrics[0;1m ---[m
+[[1;34mINFO[m] Source directory: /home/siruiw4/nifi/nifi-commons/nifi-metrics/src/main/groovy added.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-metrics[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mnifi-metrics[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-commons/nifi-metrics/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-metrics[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 2 source files to /home/siruiw4/nifi/nifi-commons/nifi-metrics/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuild-helper-maven-plugin:1.5:add-test-source[m [1m(add-test-source)[m @ [36mnifi-metrics[0;1m ---[m
+[[1;34mINFO[m] Test Source directory: /home/siruiw4/nifi/nifi-commons/nifi-metrics/src/test/groovy added.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mnifi-metrics[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-commons/nifi-metrics/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-metrics[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-metrics[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Using Groovy-Eclipse compiler to compile both Java and Groovy files
+[[1;34mINFO[m] Compiling in a forked process using /home/siruiw4/.m2/repository/org/codehaus/groovy/groovy-eclipse-batch/3.0.8-01/groovy-eclipse-batch-3.0.8-01.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-metrics[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-metrics[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/siruiw4/nifi/nifi-commons/nifi-metrics/target/nifi-metrics-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-metrics[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-metrics[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-commons/nifi-metrics/target/nifi-metrics-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-metrics/1.18.0-SNAPSHOT/nifi-metrics-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-commons/nifi-metrics/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-metrics/1.18.0-SNAPSHOT/nifi-metrics-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------< [0;36morg.apache.nifi.registry:nifi-registry[0;1m >---------------[m
+[[1;34mINFO[m] [1mBuilding nifi-registry 1.18.0-SNAPSHOT                           [17/46][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-registry[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-registry[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-registry[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-registry[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.4:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-registry[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-registry[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-registry/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/registry/nifi-registry/1.18.0-SNAPSHOT/nifi-registry-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------< [0;36morg.apache.nifi.registry:nifi-registry-core[0;1m >-------------[m
+[[1;34mINFO[m] [1mBuilding nifi-registry-core 1.18.0-SNAPSHOT                      [18/46][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-registry-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-registry-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-registry-core[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-registry-core[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.4:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-registry-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-registry-core[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-registry/nifi-registry-core/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/registry/nifi-registry-core/1.18.0-SNAPSHOT/nifi-registry-core-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------< [0;36morg.apache.nifi.registry:nifi-registry-revision[0;1m >-----------[m
+[[1;34mINFO[m] [1mBuilding nifi-registry-revision 1.18.0-SNAPSHOT                  [19/46][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-registry-revision[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-registry-revision[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-registry-revision[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-registry-revision[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.4:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-registry-revision[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-registry-revision[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-revision/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/registry/nifi-registry-revision/1.18.0-SNAPSHOT/nifi-registry-revision-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----< [0;36morg.apache.nifi.registry:nifi-registry-revision-entity-model[0;1m >----[m
+[[1;34mINFO[m] [1mBuilding nifi-registry-revision-entity-model 1.18.0-SNAPSHOT     [20/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-registry-revision-entity-model[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-registry-revision-entity-model[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-registry-revision-entity-model[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.7:resources[m [1m(default-resources)[m @ [36mnifi-registry-revision-entity-model[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-revision/nifi-registry-revision-entity-model/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-registry-revision-entity-model[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.7:testResources[m [1m(default-testResources)[m @ [36mnifi-registry-revision-entity-model[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-revision/nifi-registry-revision-entity-model/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-registry-revision-entity-model[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-registry-revision-entity-model[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-registry-revision-entity-model[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-registry-revision-entity-model[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.4:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-registry-revision-entity-model[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-registry-revision-entity-model[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-revision/nifi-registry-revision-entity-model/target/nifi-registry-revision-entity-model-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/registry/nifi-registry-revision-entity-model/1.18.0-SNAPSHOT/nifi-registry-revision-entity-model-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-revision/nifi-registry-revision-entity-model/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/registry/nifi-registry-revision-entity-model/1.18.0-SNAPSHOT/nifi-registry-revision-entity-model-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36morg.apache.nifi:nifi-manifest[0;1m >--------------------[m
+[[1;34mINFO[m] [1mBuilding nifi-manifest 1.18.0-SNAPSHOT                           [21/46][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-manifest[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-manifest[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-manifest[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-manifest[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-manifest[0;1m ---[m
+[[1;34mINFO[m] No site descriptor found: nothing to attach.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-manifest[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-manifest/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-manifest/1.18.0-SNAPSHOT/nifi-manifest-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------< [0;36morg.apache.nifi:nifi-extension-manifest-model[0;1m >------------[m
+[[1;34mINFO[m] [1mBuilding nifi-extension-manifest-model 1.18.0-SNAPSHOT           [22/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-extension-manifest-model[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-extension-manifest-model[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-extension-manifest-model[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mnifi-extension-manifest-model[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-manifest/nifi-extension-manifest-model/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-extension-manifest-model[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mnifi-extension-manifest-model[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-manifest/nifi-extension-manifest-model/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-extension-manifest-model[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-extension-manifest-model[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-extension-manifest-model[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-extension-manifest-model[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-extension-manifest-model[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-extension-manifest-model[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-manifest/nifi-extension-manifest-model/target/nifi-extension-manifest-model-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-extension-manifest-model/1.18.0-SNAPSHOT/nifi-extension-manifest-model-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-manifest/nifi-extension-manifest-model/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-extension-manifest-model/1.18.0-SNAPSHOT/nifi-extension-manifest-model-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------< [0;36morg.apache.nifi.registry:nifi-registry-data-model[0;1m >----------[m
+[[1;34mINFO[m] [1mBuilding nifi-registry-data-model 1.18.0-SNAPSHOT                [23/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-registry-data-model[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-registry-data-model[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-registry-data-model[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.7:resources[m [1m(default-resources)[m @ [36mnifi-registry-data-model[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-data-model/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-registry-data-model[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 50 source files to /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-data-model/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.7:testResources[m [1m(default-testResources)[m @ [36mnifi-registry-data-model[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-data-model/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-registry-data-model[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 1 source file to /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-data-model/target/test-classes
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-data-model/src/test/java/org/apache/nifi/registry/flow/TestVersionedRemoteProcessGroup.java:[36,31] [deprecation] getTargetUri() in VersionedRemoteProcessGroup has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-data-model/src/test/java/org/apache/nifi/registry/flow/TestVersionedRemoteProcessGroup.java:[41,31] [deprecation] getTargetUri() in VersionedRemoteProcessGroup has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-data-model/src/test/java/org/apache/nifi/registry/flow/TestVersionedRemoteProcessGroup.java:[51,34] [deprecation] getTargetUri() in VersionedRemoteProcessGroup has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-data-model/src/test/java/org/apache/nifi/registry/flow/TestVersionedRemoteProcessGroup.java:[59,31] [deprecation] getTargetUri() in VersionedRemoteProcessGroup has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-data-model/src/test/java/org/apache/nifi/registry/flow/TestVersionedRemoteProcessGroup.java:[64,31] [deprecation] getTargetUri() in VersionedRemoteProcessGroup has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-data-model/src/test/java/org/apache/nifi/registry/flow/TestVersionedRemoteProcessGroup.java:[69,34] [deprecation] getTargetUri() in VersionedRemoteProcessGroup has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-data-model/src/test/java/org/apache/nifi/registry/flow/TestVersionedRemoteProcessGroup.java:[74,34] [deprecation] getTargetUri() in VersionedRemoteProcessGroup has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-data-model/src/test/java/org/apache/nifi/registry/flow/TestVersionedRemoteProcessGroup.java:[82,34] [deprecation] getTargetUri() in VersionedRemoteProcessGroup has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-data-model/src/test/java/org/apache/nifi/registry/flow/TestVersionedRemoteProcessGroup.java:[87,34] [deprecation] getTargetUri() in VersionedRemoteProcessGroup has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-data-model/src/test/java/org/apache/nifi/registry/flow/TestVersionedRemoteProcessGroup.java:[92,34] [deprecation] getTargetUri() in VersionedRemoteProcessGroup has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-data-model/src/test/java/org/apache/nifi/registry/flow/TestVersionedRemoteProcessGroup.java:[97,34] [deprecation] getTargetUri() in VersionedRemoteProcessGroup has been deprecated
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-registry-data-model[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-registry-data-model[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-registry-data-model[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-data-model/target/nifi-registry-data-model-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.4:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-registry-data-model[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-registry-data-model[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-data-model/target/nifi-registry-data-model-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/registry/nifi-registry-data-model/1.18.0-SNAPSHOT/nifi-registry-data-model-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-data-model/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/registry/nifi-registry-data-model/1.18.0-SNAPSHOT/nifi-registry-data-model-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------------< [0;36morg.apache.nifi:c2[0;1m >-------------------------[m
+[[1;34mINFO[m] [1mBuilding c2 1.18.0-SNAPSHOT                                      [24/46][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mc2[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mc2[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mc2[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mc2[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mc2[0;1m ---[m
+[[1;34mINFO[m] No site descriptor found: nothing to attach.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mc2[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/c2/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/c2/1.18.0-SNAPSHOT/c2-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------------< [0;36morg.apache.nifi:c2-protocol[0;1m >---------------------[m
+[[1;34mINFO[m] [1mBuilding c2-protocol 1.18.0-SNAPSHOT                             [25/46][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mc2-protocol[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mc2-protocol[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mc2-protocol[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mc2-protocol[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mc2-protocol[0;1m ---[m
+[[1;34mINFO[m] No site descriptor found: nothing to attach.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mc2-protocol[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/c2/c2-protocol/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/c2-protocol/1.18.0-SNAPSHOT/c2-protocol-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------< [0;36morg.apache.nifi:c2-protocol-component-api[0;1m >--------------[m
+[[1;34mINFO[m] [1mBuilding c2-protocol-component-api 1.18.0-SNAPSHOT               [26/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mc2-protocol-component-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mc2-protocol-component-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mc2-protocol-component-api[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mc2-protocol-component-api[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/c2/c2-protocol/c2-protocol-component-api/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mc2-protocol-component-api[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mc2-protocol-component-api[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/c2/c2-protocol/c2-protocol-component-api/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mc2-protocol-component-api[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mc2-protocol-component-api[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mc2-protocol-component-api[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mc2-protocol-component-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mc2-protocol-component-api[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mc2-protocol-component-api[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/c2/c2-protocol/c2-protocol-component-api/target/c2-protocol-component-api-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/c2-protocol-component-api/1.18.0-SNAPSHOT/c2-protocol-component-api-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/c2/c2-protocol/c2-protocol-component-api/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/c2-protocol-component-api/1.18.0-SNAPSHOT/c2-protocol-component-api-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------< [0;36morg.apache.nifi:nifi-nar-bundles[0;1m >------------------[m
+[[1;34mINFO[m] [1mBuilding nifi-nar-bundles 1.18.0-SNAPSHOT                        [27/46][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-nar-bundles[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-nar-bundles[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:3.0.0:create[m [1m(default)[m @ [36mnifi-nar-bundles[0;1m ---[m
+[[1;34mINFO[m] ShortRevision tag detected. The value is '7'.
+[[1;34mINFO[m] Executing: /bin/sh -c cd '/home/siruiw4/nifi/nifi-nar-bundles' && 'git' 'rev-parse' '--verify' '--short=7' 'HEAD'
+[[1;34mINFO[m] Working directory: /home/siruiw4/nifi/nifi-nar-bundles
+[[1;34mINFO[m] Storing buildNumber: 3be5036 at timestamp: 1661757743980
+[[1;34mINFO[m] Storing buildScmBranch: main
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-nar-bundles[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-nar-bundles[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-nar-bundles[0;1m ---[m
+[[1;34mINFO[m] No site descriptor found: nothing to attach.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-nar-bundles[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-nar-bundles/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-nar-bundles/1.18.0-SNAPSHOT/nifi-nar-bundles-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------< [0;36morg.apache.nifi:nifi-framework-bundle[0;1m >----------------[m
+[[1;34mINFO[m] [1mBuilding nifi-framework-bundle 1.18.0-SNAPSHOT                   [28/46][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-framework-bundle[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-framework-bundle[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:3.0.0:create[m [1m(default)[m @ [36mnifi-framework-bundle[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-framework-bundle[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-framework-bundle[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-framework-bundle[0;1m ---[m
+[[1;34mINFO[m] No site descriptor found: nothing to attach.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-framework-bundle[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-framework-bundle/1.18.0-SNAPSHOT/nifi-framework-bundle-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36morg.apache.nifi:nifi-framework[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding nifi-framework 1.18.0-SNAPSHOT                          [29/46][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-framework[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-framework[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:3.0.0:create[m [1m(default)[m @ [36mnifi-framework[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-framework[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-framework[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-framework[0;1m ---[m
+[[1;34mINFO[m] No site descriptor found: nothing to attach.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-framework[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-framework/1.18.0-SNAPSHOT/nifi-framework-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------< [0;36morg.apache.nifi:nifi-client-dto[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding nifi-client-dto 1.18.0-SNAPSHOT                         [30/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-client-dto[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-client-dto[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:3.0.0:create[m [1m(default)[m @ [36mnifi-client-dto[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-client-dto[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mnifi-client-dto[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-client-dto/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-client-dto[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 346 source files to /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-client-dto/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mnifi-client-dto[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-client-dto/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-client-dto[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 4 source files to /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-client-dto/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-client-dto[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-client-dto[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-client-dto[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-client-dto/target/nifi-client-dto-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-client-dto[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-client-dto[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-client-dto/target/nifi-client-dto-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-client-dto/1.18.0-SNAPSHOT/nifi-client-dto-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-client-dto/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-client-dto/1.18.0-SNAPSHOT/nifi-client-dto-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------< [0;36morg.apache.nifi:nifi-site-to-site-client[0;1m >--------------[m
+[[1;34mINFO[m] [1mBuilding nifi-site-to-site-client 1.18.0-SNAPSHOT                [31/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-site-to-site-client[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-site-to-site-client[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-site-to-site-client[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mnifi-site-to-site-client[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-commons/nifi-site-to-site-client/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-site-to-site-client[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 66 source files to /home/siruiw4/nifi/nifi-commons/nifi-site-to-site-client/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mnifi-site-to-site-client[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-commons/nifi-site-to-site-client/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-site-to-site-client[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 8 source files to /home/siruiw4/nifi/nifi-commons/nifi-site-to-site-client/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-site-to-site-client[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Using Groovy-Eclipse compiler to compile both Java and Groovy files
+[[1;34mINFO[m] Compiling in a forked process using /home/siruiw4/.m2/repository/org/codehaus/groovy/groovy-eclipse-batch/3.0.8-01/groovy-eclipse-batch-3.0.8-01.jar
+[[1;33mWARNING[m] Error output from groovy-eclipse compiler:
+----------
+1. WARNING in /home/siruiw4/nifi/nifi-commons/nifi-site-to-site-client/src/test/groovy/org/apache/nifi/remote/client/PeerSelectorTest.groovy (at line 36)
+	class PeerSelectorTest extends GroovyTestCase {
+	                               ^^^^^^^^^^^^^^
+The type GroovyTestCase is deprecated
+----------
+1 problem (1 warning)
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-site-to-site-client[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-site-to-site-client[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/siruiw4/nifi/nifi-commons/nifi-site-to-site-client/target/nifi-site-to-site-client-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-site-to-site-client[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-site-to-site-client[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-commons/nifi-site-to-site-client/target/nifi-site-to-site-client-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-site-to-site-client/1.18.0-SNAPSHOT/nifi-site-to-site-client-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-commons/nifi-site-to-site-client/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-site-to-site-client/1.18.0-SNAPSHOT/nifi-site-to-site-client-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------< [0;36morg.apache.nifi:nifi-server-api[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding nifi-server-api 1.18.0-SNAPSHOT                         [32/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-server-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-server-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-server-api[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mnifi-server-api[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-server-api/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-server-api[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 2 source files to /home/siruiw4/nifi/nifi-server-api/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mnifi-server-api[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-server-api/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-server-api[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-server-api[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-server-api[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-server-api[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/siruiw4/nifi/nifi-server-api/target/nifi-server-api-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-server-api[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-server-api[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-server-api/target/nifi-server-api-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-server-api/1.18.0-SNAPSHOT/nifi-server-api-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-server-api/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-server-api/1.18.0-SNAPSHOT/nifi-server-api-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36morg.apache.nifi:nifi-nar-utils[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding nifi-nar-utils 1.18.0-SNAPSHOT                          [33/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-nar-utils[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-nar-utils[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:3.0.0:create[m [1m(default)[m @ [36mnifi-nar-utils[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-nar-utils[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mnifi-nar-utils[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-nar-utils[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 14 source files to /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-nar-utils/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32maspectj-maven-plugin:1.12.6:compile[m [1m(default)[m @ [36mnifi-nar-utils[0;1m ---[m
+[[1;34mINFO[m] Showing AJC message detail for messages of types: [error, warning, fail]
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mnifi-nar-utils[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] Copying 4 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-nar-utils[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 3 source files to /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-nar-utils/target/test-classes
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-nar-utils/src/test/java/org/apache/nifi/nar/AbstractNativeLibHandlingClassLoaderTest.java:[66,8] [deprecation] initMocks(Object) in MockitoAnnotations has been deprecated
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-nar-utils[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-nar-utils[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-nar-utils[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-nar-utils/target/nifi-nar-utils-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-nar-utils[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-nar-utils[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-nar-utils/target/nifi-nar-utils-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-nar-utils/1.18.0-SNAPSHOT/nifi-nar-utils-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-nar-utils/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-nar-utils/1.18.0-SNAPSHOT/nifi-nar-utils-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------< [0;36morg.apache.nifi:nifi-extension-manifest-parser[0;1m >-----------[m
+[[1;34mINFO[m] [1mBuilding nifi-extension-manifest-parser 1.18.0-SNAPSHOT          [34/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-extension-manifest-parser[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-extension-manifest-parser[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-extension-manifest-parser[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mnifi-extension-manifest-parser[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-manifest/nifi-extension-manifest-parser/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-extension-manifest-parser[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 3 source files to /home/siruiw4/nifi/nifi-manifest/nifi-extension-manifest-parser/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mnifi-extension-manifest-parser[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] Copying 7 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-extension-manifest-parser[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 1 source file to /home/siruiw4/nifi/nifi-manifest/nifi-extension-manifest-parser/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-extension-manifest-parser[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-extension-manifest-parser[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-extension-manifest-parser[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/siruiw4/nifi/nifi-manifest/nifi-extension-manifest-parser/target/nifi-extension-manifest-parser-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-extension-manifest-parser[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-extension-manifest-parser[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-manifest/nifi-extension-manifest-parser/target/nifi-extension-manifest-parser-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-extension-manifest-parser/1.18.0-SNAPSHOT/nifi-extension-manifest-parser-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-manifest/nifi-extension-manifest-parser/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-extension-manifest-parser/1.18.0-SNAPSHOT/nifi-extension-manifest-parser-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------< [0;36morg.apache.nifi:nifi-runtime-manifest-core[0;1m >-------------[m
+[[1;34mINFO[m] [1mBuilding nifi-runtime-manifest-core 1.18.0-SNAPSHOT              [35/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-runtime-manifest-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-runtime-manifest-core[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-runtime-manifest-core[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mnifi-runtime-manifest-core[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-manifest/nifi-runtime-manifest-core/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-runtime-manifest-core[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 10 source files to /home/siruiw4/nifi/nifi-manifest/nifi-runtime-manifest-core/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mnifi-runtime-manifest-core[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-manifest/nifi-runtime-manifest-core/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-runtime-manifest-core[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-runtime-manifest-core[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-runtime-manifest-core[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-runtime-manifest-core[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/siruiw4/nifi/nifi-manifest/nifi-runtime-manifest-core/target/nifi-runtime-manifest-core-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-runtime-manifest-core[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-runtime-manifest-core[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-manifest/nifi-runtime-manifest-core/target/nifi-runtime-manifest-core-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-runtime-manifest-core/1.18.0-SNAPSHOT/nifi-runtime-manifest-core-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-manifest/nifi-runtime-manifest-core/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-runtime-manifest-core/1.18.0-SNAPSHOT/nifi-runtime-manifest-core-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------< [0;36morg.apache.nifi:nifi-framework-nar-utils[0;1m >--------------[m
+[[1;34mINFO[m] [1mBuilding nifi-framework-nar-utils 1.18.0-SNAPSHOT                [36/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-framework-nar-utils[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-framework-nar-utils[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:3.0.0:create[m [1m(default)[m @ [36mnifi-framework-nar-utils[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-framework-nar-utils[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mnifi-framework-nar-utils[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-nar-utils/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-framework-nar-utils[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 23 source files to /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-nar-utils/target/classes
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-nar-utils/src/main/java/org/apache/nifi/nar/NarThreadContextClassLoader.java:[239,55] [deprecation] newInstance() in Class has been deprecated
+  where T is a type-variable:
+    T extends Object declared in class Class
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-nar-utils/src/main/java/org/apache/nifi/nar/StandardExtensionDiscoveringManager.java:[114,26] [deprecation] NarProvider in org.apache.nifi.nar has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-nar-utils/src/main/java/org/apache/nifi/nar/StandardExtensionDiscoveringManager.java:[613,94] [deprecation] newInstance() in Class has been deprecated
+  where T is a type-variable:
+    T extends Object declared in class Class
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-nar-utils/src/main/java/org/apache/nifi/init/ReflectionUtils.java:[63,51] [deprecation] isAccessible() in AccessibleObject has been deprecated
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mnifi-framework-nar-utils[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] Copying 7 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-framework-nar-utils[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 3 source files to /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-nar-utils/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-framework-nar-utils[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-framework-nar-utils[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-framework-nar-utils[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-nar-utils/target/nifi-framework-nar-utils-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-framework-nar-utils[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-framework-nar-utils[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-nar-utils/target/nifi-framework-nar-utils-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-framework-nar-utils/1.18.0-SNAPSHOT/nifi-framework-nar-utils-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-nar-utils/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-framework-nar-utils/1.18.0-SNAPSHOT/nifi-framework-nar-utils-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------< [0;36morg.apache.nifi:nifi-mock-authorizer[0;1m >----------------[m
+[[1;34mINFO[m] [1mBuilding nifi-mock-authorizer 1.18.0-SNAPSHOT                    [37/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-mock-authorizer[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-mock-authorizer[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:3.0.0:create[m [1m(default)[m @ [36mnifi-mock-authorizer[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-mock-authorizer[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mnifi-mock-authorizer[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-mock-authorizer/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-mock-authorizer[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 1 source file to /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-mock-authorizer/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mnifi-mock-authorizer[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-mock-authorizer/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-mock-authorizer[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-mock-authorizer[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-mock-authorizer[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-mock-authorizer[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-mock-authorizer/target/nifi-mock-authorizer-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-mock-authorizer[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-mock-authorizer[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-mock-authorizer/target/nifi-mock-authorizer-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-mock-authorizer/1.18.0-SNAPSHOT/nifi-mock-authorizer-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-mock-authorizer/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-mock-authorizer/1.18.0-SNAPSHOT/nifi-mock-authorizer-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------< [0;36morg.apache.nifi:nifi-framework-authorization[0;1m >------------[m
+[[1;34mINFO[m] [1mBuilding nifi-framework-authorization 1.18.0-SNAPSHOT            [38/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-framework-authorization[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-framework-authorization[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:3.0.0:create[m [1m(default)[m @ [36mnifi-framework-authorization[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-framework-authorization[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mnifi-framework-authorization[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-authorization/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-framework-authorization[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 12 source files to /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-authorization/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mnifi-framework-authorization[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-authorization/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-framework-authorization[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 3 source files to /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-authorization/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-framework-authorization[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-framework-authorization[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-framework-authorization[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-authorization/target/nifi-framework-authorization-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-framework-authorization[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-framework-authorization[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-authorization/target/nifi-framework-authorization-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-framework-authorization/1.18.0-SNAPSHOT/nifi-framework-authorization-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-authorization/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-framework-authorization/1.18.0-SNAPSHOT/nifi-framework-authorization-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------< [0;36morg.apache.nifi.registry:nifi-registry-security-utils[0;1m >--------[m
+[[1;34mINFO[m] [1mBuilding nifi-registry-security-utils 1.18.0-SNAPSHOT            [39/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-registry-security-utils[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-registry-security-utils[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-registry-security-utils[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.7:resources[m [1m(default-resources)[m @ [36mnifi-registry-security-utils[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-security-utils/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-registry-security-utils[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 7 source files to /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-security-utils/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.7:testResources[m [1m(default-testResources)[m @ [36mnifi-registry-security-utils[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-security-utils/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-registry-security-utils[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 1 source file to /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-security-utils/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-registry-security-utils[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Using Groovy-Eclipse compiler to compile both Java and Groovy files
+[[1;34mINFO[m] Compiling in a forked process using /home/siruiw4/.m2/repository/org/codehaus/groovy/groovy-eclipse-batch/3.0.8-01/groovy-eclipse-batch-3.0.8-01.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-registry-security-utils[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-registry-security-utils[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-security-utils/target/nifi-registry-security-utils-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.4:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-registry-security-utils[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-registry-security-utils[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-security-utils/target/nifi-registry-security-utils-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/registry/nifi-registry-security-utils/1.18.0-SNAPSHOT/nifi-registry-security-utils-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-security-utils/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/registry/nifi-registry-security-utils/1.18.0-SNAPSHOT/nifi-registry-security-utils-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------< [0;36morg.apache.nifi.registry:nifi-registry-client[0;1m >------------[m
+[[1;34mINFO[m] [1mBuilding nifi-registry-client 1.18.0-SNAPSHOT                    [40/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-registry-client[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-registry-client[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-registry-client[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.7:resources[m [1m(default-resources)[m @ [36mnifi-registry-client[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-client/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-registry-client[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 36 source files to /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-client/target/classes
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-client/src/main/java/org/apache/nifi/registry/client/impl/JerseyNiFiRegistryClient.java:[296,26] [deprecation] getPoliciesClient(String...) in NiFiRegistryClient has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-client/src/main/java/org/apache/nifi/registry/client/impl/JerseyNiFiRegistryClient.java:[280,25] [deprecation] getTenantsClient(String...) in NiFiRegistryClient has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-client/src/main/java/org/apache/nifi/registry/client/impl/JerseyNiFiRegistryClient.java:[264,27] [deprecation] getExtensionClient(String...) in NiFiRegistryClient has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-client/src/main/java/org/apache/nifi/registry/client/impl/JerseyNiFiRegistryClient.java:[248,31] [deprecation] getExtensionRepoClient(String...) in NiFiRegistryClient has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-client/src/main/java/org/apache/nifi/registry/client/impl/JerseyNiFiRegistryClient.java:[232,31] [deprecation] getBundleVersionClient(String...) in NiFiRegistryClient has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-client/src/main/java/org/apache/nifi/registry/client/impl/JerseyNiFiRegistryClient.java:[216,24] [deprecation] getBundleClient(String...) in NiFiRegistryClient has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-client/src/main/java/org/apache/nifi/registry/client/impl/JerseyNiFiRegistryClient.java:[200,22] [deprecation] getUserClient(String...) in NiFiRegistryClient has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-client/src/main/java/org/apache/nifi/registry/client/impl/JerseyNiFiRegistryClient.java:[184,23] [deprecation] getItemsClient(String...) in NiFiRegistryClient has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-client/src/main/java/org/apache/nifi/registry/client/impl/JerseyNiFiRegistryClient.java:[168,30] [deprecation] getFlowSnapshotClient(String...) in NiFiRegistryClient has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-client/src/main/java/org/apache/nifi/registry/client/impl/JerseyNiFiRegistryClient.java:[152,22] [deprecation] getFlowClient(String...) in NiFiRegistryClient has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-client/src/main/java/org/apache/nifi/registry/client/impl/JerseyNiFiRegistryClient.java:[136,24] [deprecation] getBucketClient(String...) in NiFiRegistryClient has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-client/src/main/java/org/apache/nifi/registry/client/impl/JerseyNiFiRegistryClient.java:[351,14] [deprecation] setPropertyInclusion(Value) in ObjectMapper has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-client/src/main/java/org/apache/nifi/registry/client/NiFiRegistryClient.java:[36,17] [dep-ann] deprecated item is not annotated with @Deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-client/src/main/java/org/apache/nifi/registry/client/NiFiRegistryClient.java:[55,15] [dep-ann] deprecated item is not annotated with @Deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-client/src/main/java/org/apache/nifi/registry/client/NiFiRegistryClient.java:[74,23] [dep-ann] deprecated item is not annotated with @Deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-client/src/main/java/org/apache/nifi/registry/client/NiFiRegistryClient.java:[93,16] [dep-ann] deprecated item is not annotated with @Deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-client/src/main/java/org/apache/nifi/registry/client/NiFiRegistryClient.java:[112,15] [dep-ann] deprecated item is not annotated with @Deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-client/src/main/java/org/apache/nifi/registry/client/NiFiRegistryClient.java:[131,17] [dep-ann] deprecated item is not annotated with @Deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-client/src/main/java/org/apache/nifi/registry/client/NiFiRegistryClient.java:[150,24] [dep-ann] deprecated item is not annotated with @Deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-client/src/main/java/org/apache/nifi/registry/client/NiFiRegistryClient.java:[169,24] [dep-ann] deprecated item is not annotated with @Deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-client/src/main/java/org/apache/nifi/registry/client/NiFiRegistryClient.java:[188,20] [dep-ann] deprecated item is not annotated with @Deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-client/src/main/java/org/apache/nifi/registry/client/NiFiRegistryClient.java:[213,18] [dep-ann] deprecated item is not annotated with @Deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-client/src/main/java/org/apache/nifi/registry/client/NiFiRegistryClient.java:[238,19] [dep-ann] deprecated item is not annotated with @Deprecated
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.7:testResources[m [1m(default-testResources)[m @ [36mnifi-registry-client[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-client/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-registry-client[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 3 source files to /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-client/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-registry-client[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-registry-client[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-registry-client[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-client/target/nifi-registry-client-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.4:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-registry-client[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-registry-client[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-client/target/nifi-registry-client-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/registry/nifi-registry-client/1.18.0-SNAPSHOT/nifi-registry-client-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-registry/nifi-registry-core/nifi-registry-client/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/registry/nifi-registry-client/1.18.0-SNAPSHOT/nifi-registry-client-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------< [0;36morg.apache.nifi:nifi-framework-core-api[0;1m >---------------[m
+[[1;34mINFO[m] [1mBuilding nifi-framework-core-api 1.18.0-SNAPSHOT                 [41/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-framework-core-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-framework-core-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:3.0.0:create[m [1m(default)[m @ [36mnifi-framework-core-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-framework-core-api[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mnifi-framework-core-api[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-core-api/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-framework-core-api[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 140 source files to /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-core-api/target/classes
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-core-api/src/main/java/org/apache/nifi/controller/AbstractPort.java:[470,44] [deprecation] getTimeDuration(String,TimeUnit) in FormatUtils has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-core-api/src/main/java/org/apache/nifi/controller/AbstractPort.java:[479,48] [deprecation] getTimeDuration(String,TimeUnit) in FormatUtils has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-core-api/src/main/java/org/apache/nifi/controller/AbstractPort.java:[490,26] [deprecation] getTimeDuration(String,TimeUnit) in FormatUtils has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-core-api/src/main/java/org/apache/nifi/controller/AbstractPort.java:[537,26] [deprecation] getTimeDuration(String,TimeUnit) in FormatUtils has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-core-api/src/main/java/org/apache/nifi/logging/LogRepositoryFactory.java:[52,47] [deprecation] newInstance() in Class has been deprecated
+  where T is a type-variable:
+    T extends Object declared in class Class
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-core-api/src/main/java/org/apache/nifi/util/CharacterFilterUtils.java:[40,25] [deprecation] CharSequenceTranslator in org.apache.commons.lang3.text.translate has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-core-api/src/main/java/org/apache/nifi/util/CharacterFilterUtils.java:[40,83] [deprecation] AggregateTranslator in org.apache.commons.lang3.text.translate has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-core-api/src/main/java/org/apache/nifi/util/CharacterFilterUtils.java:[41,16] [deprecation] LookupTranslator in org.apache.commons.lang3.text.translate has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-core-api/src/main/java/org/apache/nifi/util/CharacterFilterUtils.java:[42,16] [deprecation] UnicodeUnpairedSurrogateRemover in org.apache.commons.lang3.text.translate has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-core-api/src/main/java/org/apache/nifi/controller/StandardFunnel.java:[437,44] [deprecation] getTimeDuration(String,TimeUnit) in FormatUtils has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-core-api/src/main/java/org/apache/nifi/controller/StandardFunnel.java:[446,48] [deprecation] getTimeDuration(String,TimeUnit) in FormatUtils has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-core-api/src/main/java/org/apache/nifi/controller/StandardFunnel.java:[457,26] [deprecation] getTimeDuration(String,TimeUnit) in FormatUtils has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-core-api/src/main/java/org/apache/nifi/controller/StandardFunnel.java:[505,26] [deprecation] getTimeDuration(String,TimeUnit) in FormatUtils has been deprecated
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mnifi-framework-core-api[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-core-api/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-framework-core-api[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 5 source files to /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-core-api/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-framework-core-api[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-framework-core-api[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-framework-core-api[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-core-api/target/nifi-framework-core-api-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-framework-core-api[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-framework-core-api[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-core-api/target/nifi-framework-core-api-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-framework-core-api/1.18.0-SNAPSHOT/nifi-framework-core-api-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-core-api/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-framework-core-api/1.18.0-SNAPSHOT/nifi-framework-core-api-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------------< [0;36morg.apache.nifi:nifi-mock[0;1m >----------------------[m
+[[1;34mINFO[m] [1mBuilding nifi-mock 1.18.0-SNAPSHOT                               [42/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-mock[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-mock[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-mock[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mnifi-mock[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-mock[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 39 source files to /home/siruiw4/nifi/nifi-mock/target/classes
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-mock/src/main/java/org/apache/nifi/util/ReflectionUtils.java:[48,51] [deprecation] isAccessible() in AccessibleObject has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-mock/src/main/java/org/apache/nifi/util/ReflectionUtils.java:[105,51] [deprecation] isAccessible() in AccessibleObject has been deprecated
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-mock/src/main/java/org/apache/nifi/util/TestRunners.java:[119,47] [deprecation] newInstance() in Class has been deprecated
+  where T is a type-variable:
+    T extends Object declared in class Class
+[[1;33mWARNING[m] /home/siruiw4/nifi/nifi-mock/src/main/java/org/apache/nifi/util/TestRunners.java:[136,47] [deprecation] newInstance() in Class has been deprecated
+  where T is a type-variable:
+    T extends Object declared in class Class
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mnifi-mock[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-mock/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-mock[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 4 source files to /home/siruiw4/nifi/nifi-mock/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-mock[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-mock[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-mock[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/siruiw4/nifi/nifi-mock/target/nifi-mock-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-mock[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-mock[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-mock/target/nifi-mock-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-mock/1.18.0-SNAPSHOT/nifi-mock-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-mock/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-mock/1.18.0-SNAPSHOT/nifi-mock-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------< [0;36morg.apache.nifi:nifi-extension-utils[0;1m >----------------[m
+[[1;34mINFO[m] [1mBuilding nifi-extension-utils 1.18.0-SNAPSHOT                    [43/46][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-extension-utils[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-extension-utils[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:3.0.0:create[m [1m(default)[m @ [36mnifi-extension-utils[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-extension-utils[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-extension-utils[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-extension-utils[0;1m ---[m
+[[1;34mINFO[m] No site descriptor found: nothing to attach.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-extension-utils[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-nar-bundles/nifi-extension-utils/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-extension-utils/1.18.0-SNAPSHOT/nifi-extension-utils-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------< [0;36morg.apache.nifi:nifi-reporting-utils[0;1m >----------------[m
+[[1;34mINFO[m] [1mBuilding nifi-reporting-utils 1.18.0-SNAPSHOT                    [44/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-reporting-utils[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-reporting-utils[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:3.0.0:create[m [1m(default)[m @ [36mnifi-reporting-utils[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-reporting-utils[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mnifi-reporting-utils[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-nar-bundles/nifi-extension-utils/nifi-reporting-utils/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-reporting-utils[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 8 source files to /home/siruiw4/nifi/nifi-nar-bundles/nifi-extension-utils/nifi-reporting-utils/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mnifi-reporting-utils[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-nar-bundles/nifi-extension-utils/nifi-reporting-utils/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-reporting-utils[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 1 source file to /home/siruiw4/nifi/nifi-nar-bundles/nifi-extension-utils/nifi-reporting-utils/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-reporting-utils[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-reporting-utils[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-reporting-utils[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/siruiw4/nifi/nifi-nar-bundles/nifi-extension-utils/nifi-reporting-utils/target/nifi-reporting-utils-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-reporting-utils[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-reporting-utils[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-nar-bundles/nifi-extension-utils/nifi-reporting-utils/target/nifi-reporting-utils-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-reporting-utils/1.18.0-SNAPSHOT/nifi-reporting-utils-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-nar-bundles/nifi-extension-utils/nifi-reporting-utils/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-reporting-utils/1.18.0-SNAPSHOT/nifi-reporting-utils-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------< [0;36morg.apache.nifi:nifi-azure-bundle[0;1m >------------------[m
+[[1;34mINFO[m] [1mBuilding nifi-azure-bundle 1.18.0-SNAPSHOT                       [45/46][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-azure-bundle[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-azure-bundle[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:3.0.0:create[m [1m(default)[m @ [36mnifi-azure-bundle[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-azure-bundle[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-azure-bundle[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-azure-bundle[0;1m ---[m
+[[1;34mINFO[m] No site descriptor found: nothing to attach.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-azure-bundle[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-nar-bundles/nifi-azure-bundle/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-azure-bundle/1.18.0-SNAPSHOT/nifi-azure-bundle-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------< [0;36morg.apache.nifi:nifi-azure-reporting-task[0;1m >--------------[m
+[[1;34mINFO[m] [1mBuilding nifi-azure-reporting-task 1.18.0-SNAPSHOT               [46/46][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-maven-version)[m @ [36mnifi-azure-reporting-task[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.1.0:enforce[m [1m(enforce-java-version)[m @ [36mnifi-azure-reporting-task[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuildnumber-maven-plugin:3.0.0:create[m [1m(default)[m @ [36mnifi-azure-reporting-task[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.7.0:process[m [1m(process-resource-bundles)[m @ [36mnifi-azure-reporting-task[0;1m ---[m
+[[1;34mINFO[m] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[[1;34mINFO[m] Copying 3 resources from 1 bundle.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mnifi-azure-reporting-task[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mnifi-azure-reporting-task[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 7 source files to /home/siruiw4/nifi/nifi-nar-bundles/nifi-azure-bundle/nifi-azure-reporting-task/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mnifi-azure-reporting-task[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/siruiw4/nifi/nifi-nar-bundles/nifi-azure-bundle/nifi-azure-reporting-task/src/test/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mnifi-azure-reporting-task[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 4 source files to /home/siruiw4/nifi/nifi-nar-bundles/nifi-azure-bundle/nifi-azure-reporting-task/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(groovy-tests)[m @ [36mnifi-azure-reporting-task[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M7:test[m [1m(default-test)[m @ [36mnifi-azure-reporting-task[0;1m ---[m
+[[1;34mINFO[m] Tests are skipped.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mnifi-azure-reporting-task[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/siruiw4/nifi/nifi-nar-bundles/nifi-azure-bundle/nifi-azure-reporting-task/target/nifi-azure-reporting-task-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.11.0:attach-descriptor[m [1m(attach-descriptor)[m @ [36mnifi-azure-reporting-task[0;1m ---[m
+[[1;34mINFO[m] Skipping because packaging 'jar' is not pom.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mnifi-azure-reporting-task[0;1m ---[m
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-nar-bundles/nifi-azure-bundle/nifi-azure-reporting-task/target/nifi-azure-reporting-task-1.18.0-SNAPSHOT.jar to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-azure-reporting-task/1.18.0-SNAPSHOT/nifi-azure-reporting-task-1.18.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/siruiw4/nifi/nifi-nar-bundles/nifi-azure-bundle/nifi-azure-reporting-task/pom.xml to /home/siruiw4/.m2/repository/org/apache/nifi/nifi-azure-reporting-task/1.18.0-SNAPSHOT/nifi-azure-reporting-task-1.18.0-SNAPSHOT.pom
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Summary for nifi 1.18.0-SNAPSHOT:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] nifi ............................................... [1;32mSUCCESS[m [  2.172 s]
+[[1;34mINFO[m] nifi-commons ....................................... [1;32mSUCCESS[m [  0.065 s]
+[[1;34mINFO[m] nifi-api ........................................... [1;32mSUCCESS[m [  1.031 s]
+[[1;34mINFO[m] nifi-framework-api ................................. [1;32mSUCCESS[m [  0.244 s]
+[[1;34mINFO[m] nifi-utils ......................................... [1;32mSUCCESS[m [  3.877 s]
+[[1;34mINFO[m] nifi-data-provenance-utils ......................... [1;32mSUCCESS[m [  2.182 s]
+[[1;34mINFO[m] nifi-deprecation-log ............................... [1;32mSUCCESS[m [  0.100 s]
+[[1;34mINFO[m] nifi-parameter ..................................... [1;32mSUCCESS[m [  3.156 s]
+[[1;34mINFO[m] nifi-uuid5 ......................................... [1;32mSUCCESS[m [  1.278 s]
+[[1;34mINFO[m] nifi-expression-language ........................... [1;32mSUCCESS[m [ 12.066 s]
+[[1;34mINFO[m] nifi-security-utils-api ............................ [1;32mSUCCESS[m [  2.493 s]
+[[1;34mINFO[m] nifi-property-utils ................................ [1;32mSUCCESS[m [  0.141 s]
+[[1;34mINFO[m] nifi-properties .................................... [1;32mSUCCESS[m [  0.111 s]
+[[1;34mINFO[m] nifi-security-utils ................................ [1;32mSUCCESS[m [  7.374 s]
+[[1;34mINFO[m] nifi-xml-processing ................................ [1;32mSUCCESS[m [  7.574 s]
+[[1;34mINFO[m] nifi-metrics ....................................... [1;32mSUCCESS[m [  4.092 s]
+[[1;34mINFO[m] nifi-registry ...................................... [1;32mSUCCESS[m [  0.637 s]
+[[1;34mINFO[m] nifi-registry-core ................................. [1;32mSUCCESS[m [  0.062 s]
+[[1;34mINFO[m] nifi-registry-revision ............................. [1;32mSUCCESS[m [  0.061 s]
+[[1;34mINFO[m] nifi-registry-revision-entity-model ................ [1;32mSUCCESS[m [  0.269 s]
+[[1;34mINFO[m] nifi-manifest ...................................... [1;32mSUCCESS[m [  0.056 s]
+[[1;34mINFO[m] nifi-extension-manifest-model ...................... [1;32mSUCCESS[m [  0.114 s]
+[[1;34mINFO[m] nifi-registry-data-model ........................... [1;32mSUCCESS[m [  2.831 s]
+[[1;34mINFO[m] c2 ................................................. [1;32mSUCCESS[m [  0.049 s]
+[[1;34mINFO[m] c2-protocol ........................................ [1;32mSUCCESS[m [  0.052 s]
+[[1;34mINFO[m] c2-protocol-component-api .......................... [1;32mSUCCESS[m [  0.062 s]
+[[1;34mINFO[m] nifi-nar-bundles ................................... [1;32mSUCCESS[m [  0.626 s]
+[[1;34mINFO[m] nifi-framework-bundle .............................. [1;32mSUCCESS[m [  0.101 s]
+[[1;34mINFO[m] nifi-framework ..................................... [1;32mSUCCESS[m [  0.063 s]
+[[1;34mINFO[m] nifi-client-dto .................................... [1;32mSUCCESS[m [  4.361 s]
+[[1;34mINFO[m] nifi-site-to-site-client ........................... [1;32mSUCCESS[m [ 11.268 s]
+[[1;34mINFO[m] nifi-server-api .................................... [1;32mSUCCESS[m [  1.177 s]
+[[1;34mINFO[m] nifi-nar-utils ..................................... [1;32mSUCCESS[m [  6.590 s]
+[[1;34mINFO[m] nifi-extension-manifest-parser ..................... [1;32mSUCCESS[m [  2.508 s]
+[[1;34mINFO[m] nifi-runtime-manifest-core ......................... [1;32mSUCCESS[m [  2.011 s]
+[[1;34mINFO[m] nifi-framework-nar-utils ........................... [1;32mSUCCESS[m [  3.538 s]
+[[1;34mINFO[m] nifi-mock-authorizer ............................... [1;32mSUCCESS[m [  1.559 s]
+[[1;34mINFO[m] nifi-framework-authorization ....................... [1;32mSUCCESS[m [  2.792 s]
+[[1;34mINFO[m] nifi-registry-security-utils ....................... [1;32mSUCCESS[m [  5.782 s]
+[[1;34mINFO[m] nifi-registry-client ............................... [1;32mSUCCESS[m [  4.836 s]
+[[1;34mINFO[m] nifi-framework-core-api ............................ [1;32mSUCCESS[m [  6.129 s]
+[[1;34mINFO[m] nifi-mock .......................................... [1;32mSUCCESS[m [  5.503 s]
+[[1;34mINFO[m] nifi-extension-utils ............................... [1;32mSUCCESS[m [  0.040 s]
+[[1;34mINFO[m] nifi-reporting-utils ............................... [1;32mSUCCESS[m [  2.487 s]
+[[1;34mINFO[m] nifi-azure-bundle .................................. [1;32mSUCCESS[m [  0.043 s]
+[[1;34mINFO[m] nifi-azure-reporting-task .......................... [1;32mSUCCESS[m [  3.969 s]
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  02:04 min
+[[1;34mINFO[m] Finished at: 2022-08-29T02:23:29-05:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
