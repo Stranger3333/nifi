@@ -28,7 +28,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-
+import java.util.LinkedHashMap;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestAzureLogAnalyticsProvenanceReportingTask {
@@ -64,9 +64,9 @@ public class TestAzureLogAnalyticsProvenanceReportingTask {
         final Map<String, Object> config = Collections.emptyMap();
         final JsonBuilderFactory factory = Json.createBuilderFactory(config);
         final JsonObjectBuilder builder = factory.createObjectBuilder();
-        Map<String, String> values = new HashMap<String, String>();
-        values.put("TestKeyString1", "StringValue1");
+        LinkedHashMap<String, String> values = new LinkedHashMap<String, String>();
         values.put("TestKeyString2", "StringValue2");
+        values.put("TestKeyString1", "StringValue1");
         AzureLogAnalyticsProvenanceReportingTask.addField(builder, factory, "TestKeyString", values, true);
         javax.json.JsonObject actualJson = builder.build();
         String expectedjsonString = "{\"TestKeyString\":{\"TestKeyString2\":\"StringValue2\",\"TestKeyString1\":\"StringValue1\"}}";
